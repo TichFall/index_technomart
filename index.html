@@ -9,108 +9,104 @@
   </head>
   <body>
     <header class="header">
-      <div class="container__header">
+      <div class="container-header">
         <div class="header__menu">
-          <div class="logo__technomart">
+          <div class="logo">
             <p>ТЕХНОМАРТ</p>
           </div>
           <form method="post" enctype="multipart/form-data">
-            <img src="../img/icon-search.png" alt="Поиск">
-            <button class="button__search" type="submit">Поиск</button>
+            <img src="/img/icon-search.png" alt="Поиск">
+            <button class="btn">Поиск</button>
             <input placeholder="Искать здесь..." type="search" />
           </form>
-          <div class="bookmark">
-            <img src="../img/icon-bookmark.png" alt="Закладки">
+          <div class="hat _bookmark">
+            <img src="/img/icon-bookmark.png" alt="Закладки">
             <a href="#">Закладки:0</a>
           </div>
-          <div class="cart">
-            <img src="../img/icon-cart.png" alt="Корзина">
+          <div class="hat _cart">
+            <img src="/img/icon-cart.png" alt="Корзина">
             <a href="#">Корзина:0</a>
           </div>
-          <div class="checkout">
+          <div class="hat _checkout">
             <a href="#">Оформить заказ</a>
           </div>
         </div>
+      </div>
         <div class="info">
-          <div class="description__info">
-            <p>
-              Интернет-магазин строительных материалов и инструментов для
-              ремонта
-            </p>
-          </div>
-          <div class="info__number">
-            <img src="/img/icon-phone.png" alt="Телефон">
-            <a href="tel:">+7 (812) 555-05-55</a>
-          </div>
-          <div class="info__addres">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-          <div class="info__entry">
-            <img src="/img/icon-login.png" alt="Войти">
-            <a href="">Войти</a>
-          </div>
-          <div class="info__registr">
-            <a href="">Регистрация</a>
+          <div class="container-info">
+            <div class="description info__description _red">
+              <p>
+                Интернет-магазин строительных материалов и инструментов для
+                ремонта
+              </p>
+            </div>
+            <div class="info__number">
+              <img src="/img/icon-phone.png" alt="Телефон">
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
+            <div class="addres">
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <div class="input _img">
+              <img src="/img/icon-login.png" alt="Войти">
+              <a class="btn__input" href="">Войти</a>
+            </div>
+            <div class="info__registr">
+              <a class="btn__input" href="">Регистрация</a>
+            </div>
+            <nav class="nav">
+              <a class="nav__link" href="#">Главная</a>
+              <a class="nav__link" href="#">Компания</a>
+              <a class="nav__link" href="#">Каталог</a>
+              <a class="nav__link" href="#">Новости</a>
+              <a class="nav__link" href="#">Спецпредложения</a>
+              <a class="nav__link" href="#">Доставка</a>
+              <a class="nav__link" href="#">Контакты</a>
+            </nav>
           </div>
         </div>
-        <nav class="nav">
-          <a class="nav__link" href="#">Главная</a>
-          <a class="nav__link" href="#">Компания</a>
-          <a class="nav__link" href="#">Каталог</a>
-          <a class="nav__link" href="#">Новости</a>
-          <a class="nav__link" href="#">Спецпредложения</a>
-          <a class="nav__link" href="#">Доставка</a>
-          <a class="nav__link" href="#">Контакты</a>
-        </nav>
     </header>
-        <main class="main_index">
-          <div class="block__one">
+        <main class="main">
+          <div class="menu">
+            <div class="menu__hat">
             <div class="material">
-              <div class="material__new">
-                <a href="#">new</a>
-              </div>
+                <a class="newbtn" href="#">new</a>
               <div class="material__img">
                 <img src="/img/icon-1.png" alt="Материалы">
               </div>
-              <div class="material__submit">
-                <button type="submit">на любой вкус</button>
-              </div>
+                <a class="btn material__btn">на любой вкус</a>
               <div class="material__text">
                 <p>Материалы</p>
               </div>
             </div>
-              <div class="Tools">
+              <div class="tools">
                 <div class="tools__text">
                   <p>Инструмент</p>
                 </div>
                 <div class="tools__img">
                   <img src="/img/icon-2.png" alt="Инструменты">
                 </div>
-                <div class="tools__button">
-                  <button type="submit">на все случаи жизни</button>
-                </div>
+                  <a class="btn tools__btn">на все случаи жизни</a>
               </div>
-              <div class="Technics">
-                <div class="Technics__text">
+              <div class="technics">
+                <div class="technics__text">
                   <p>Техника</p>
                 </div>
                 <div class="technics__img">
                   <img src="/img/icon-3.png" alt="Техника">
                 </div>
-                <div class="technics__button">
-                  <button type="submit">для стройки</button>
-                </div>
+                  <a href="#" class="btn technics__btn">для стройки</a>
               </div>
+            </div>
+            <div class="menu__body">
               <div class="discounts">
                 <div class="discounts__text">
                   <p>Скидки 50%</p>
                 </div>
                 <div class="discounts__img">
                   <img src="/img/icon-4.png" alt="Скидки">
-                </div>
-                <div class="discounts__button">
-                  <button type="submit">на 350 товаров</button>
-                </div>
+                </div>            
+                  <a class="btn discounts__btn" href="#">на 350 товаров</a> 
               </div>
               <div class="delivery">
                 <div class="delivery__text">
@@ -118,150 +114,115 @@
                 </div>
                 <div class="delivery__img">
                   <img src="/img/icon-5.png" alt="Доставка">
-                </div>
-                <div class="delivery__button">
-                  <button type="submit">бесплатно</button>
-                </div>
+                </div>     
+                  <a class="btn delivery__btn" href="#">бесплатно</a> 
               </div>
               <div class="slider">
                 <img  class="slider__img" src="/img/Layer 99.png" alt="">
-                <div class="slider__text_1">
+                <div class="slider__text _big">
                   <p>перфораторы</p>
                 </div>
-                <div class="slider__text_2">
+                <div class="slider__text _small">
                   <p>Настоящие мужские игрушки</p>
-                </div>
-                <div class="slider__button">
-                  <button class="slider__button" type="submit">открыть каталог</button>
-                </div>
-              </div>
-          </div>
-          <div class="block__two">
-            <div class="head__blocktwo">
-              <div class="head__blocktwo_text">
-                <p>Популярные товары:</p>
-              </div>
-              <div class="head__blocktwo_button">
-                <button type="submit">все популярные товары</button>
+                </div>                
+                  <a href="#" class="btn slider__btn">открыть каталог</a>                
               </div>
             </div>
-            <div class="container__card">
-              <div class="cardone">
-                <div class="cardone__img">
-                  <img src="/img/snippet-32961 copy 3.png" alt="">
+          </div>         
+          <div class="products">
+            <div class="head__products">
+               <div class="head__txt">
+                <p>Популярные товары:</p>
+              </div>             
+                <a class="btn products__btn" href="#">все популярные товары</a>             
+            </div>
+            <div class="container-card">
+              <div class="card">
+                <div class="card__img">
+                  <a href="#" class="product-link"><img src="/img/snippet-32961 copy 3.png" alt=""></a>
                 </div>
-                <div class="cardone__text">
+                <div class="card__name">
                   <p>Перфоратор BOSCH BFG 9000</p>
                 </div>
-                <div class="cardthree__text2">
+                <div class="card__discount">
                   <p>32500 Р.</p>
                 </div>
-                <div class="cardone__button">
-                  <div class="cardone__button_img">
+                  <div class="card__button_img">
                   <img src="/img/Shape.png" alt="">
                   </div>
-                  <button type="submit">25500 Р.</button>
-                </div>
+                  <a class="card_button" href="#">25500 Р.</a>               
               </div>
-              <div class="cardtwo">
-                <div class="cardtwo__new">
-                  <img src="/img/Rectangle 15.png" alt="">
-                  <a href="#">new</a>
+              <div class="card">                 
+                  <a class="newbtn" href="#">new</a>               
+                <div class="card__img">
+                  <a href="" class="product-link"><img src="/img/snippet-18927 copy 3.png" alt=""> </a>
                 </div>
-                <div class="cardtwo__img">
-                  <img src="/img/snippet-18927 copy 3.png" alt="">
-                </div>
-                <div class="cardtwo__text">
+                <div class="card__name">
                   <p>Перфоратор BOSCH BFG 3000</p>
                 </div>
-                <div class="cardthree__text2">
+                <div class="card__discount">
                   <p>22500 Р.</p>
                 </div>
-                <div class="cardtwo__button">
-                  <div class="cardtwo__button_img">
+                  <div class="card__button_img">
                     <img src="/img/Shape.png" alt="">
                   </div>
-                  <button type="submit">15500 Р.</button>
-                </div>
+                  <a class="card_button" href="#">15500 Р.</a>
               </div>
-              <div class="card__three">
-                <div class="cardthree__img">
-                  <img src="/img/snippet-32961 copy 3.png" alt="">
+              <div class="card">
+                <div class="card__img">
+                  <a href="#" class="product-link"><img src="/img/snippet-32961 copy 3.png" alt=""></a>
                 </div>
-                <div class="cardthree__text">
+                <div class="card__name">
                   <p>Перфоратор BOSC HBFG 6000</p>
                 </div>
-                <div class="cardthree__text2">
+                <div class="card__discount">
                   <p>30500 Р.</p>
                 </div>
-                <div class="cardthree__button">
-                  <div class="cardthree__button_img">
+                  <div class="card__button_img">
                     <img src="/img/Shape.png" alt="">
                   </div>
-                  <button type="submit">25500 Р.</button>
-                </div>
+                  <a class="card_button" href="#">25500 Р.</a>
               </div>
-              <div class="cardfour">
-                <div class="cardfour__new">
-                  <img src="/img/Rectangle 15.png" alt="">
-                  <a href="#">new</a>
+              <div class="card">              
+                  <a class="newbtn" href="#">new</a>               
+                <div class="card__img">
+                  <a href="" class="product-link"><img src="/img/snippet-18927 copy 3.png" alt=""></a>
                 </div>
-                <div class="cardfour__img">
-                  <img src="/img/snippet-18927 copy 3.png" alt="">
-                </div>
-                <div class="cardfour__text">
+                <div class="card__text">
                   <p>Перфоратор BOSCH BFG 2000</p>
                 </div>
-                <div class="cardfour__button">
-                  <div class="cardfour__button_img">
+                  <div class="card__button_img">
                     <img src="/img/Shape.png" alt="">
                   </div>
-                  <button type="submit">12500 Р.</button>
-                </div>
+                  <a class="card_button" href="#">12500 Р.</a>
               </div>
             </div>
           </div>
-          <div class="block_three">
-            <div class="head__blockthree">
-              <div class="head__blockthree_text">
+          <div class="manufacturers">
+            <div class="head__manufacturers">
+              <div class="head__txt">
                 <p>Популярные производители:</p>
-              </div>
-              <div class="head__blockthree_button">
-                <button type="submit">все производители</button>
-              </div>
+              </div>             
+                <a href="#" class="btn manufacturers__btn">все производители</a>             
             </div>
-            <div class="manufacturs">
-              <div class="manufac__bosh">
-                <a href="#"> <img src="/img/bosch.png" alt=""></a>
-              </div>
-              <div class="manufac__makita">
-                <a href="#"> <img src="/img/Makita.png" alt=""></a>
-              </div>
-              <div class="manufac__dewalt">
-                <a href="#"> <img src="/img/DeWALT.png" alt=""></a>
-              </div>
-              <div class="manufac__intercol">
-                <a href="#"> <img src="/img/Интерскол.png" alt=""></a>
-              </div>
-              <div class="manufac__hitachi">
-                <a href="#"> <img src="/img/Hitachi.png" alt=""></a>
-              </div>
-              <div class="manufac__lg">
-                <a href="#"> <img src="/img/LG.png" alt=""></a>
-              </div>
-              <div class="manufac__aeg">
-                <a href="#"> <img src="/img/Object.png" alt=""></a>
-              </div>
-              <div class="manufac__matabo">
-                <a href="#"> <img src="/img/metabo.png" alt=""></a>
-              </div>
+            <div class="container-manufacturers">
+             <div class="brands">
+                <a href="#" class="brands__size"> <img src="/img/bosch.png" alt=""></a>    
+                <a href="#" class="brands__size"> <img src="/img/Makita.png" alt=""></a>   
+                <a href="#" class="brands__size"> <img src="/img/DeWALT.png" alt=""></a>  
+                <a href="#" class="brands__size"> <img src="/img/Интерскол.png" alt=""></a>
+                <a href="#" class="brands__size"> <img src="/img/Hitachi.png" alt=""></a>
+                <a href="#" class="brands__size"> <img src="/img/LG.png" alt=""></a>             
+                <a href="#" class="brands__size"> <img src="/img/Object.png" alt=""></a>        
+                <a href="#" class="brands__size"> <img src="/img/metabo.png" alt=""></a>
+            </div>
             </div>
           </div>
-          <div class="blockfour">
-            <div class="blockfour__service">
+          <div class="service">
+            <div class="heading _service">
               <p>Сервисы</p>
             </div>
-            <div class="blockfour__title">
+            <div class="service__title description">
               <p>Хороший интернет-магазин отличается от плохого не только ценами!
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
@@ -278,7 +239,7 @@
               <div class="del__text">
                 <p>Доставка</p>
               </div>
-              <div class="del__description">
+              <div class="del__description description">
                 <p>Мы с удовольствием доставим ваш товар прямо 
                   к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем, 
@@ -289,47 +250,45 @@
               </div>
             </div>
           </div>
-          <div class="blockfive">
-            <div class="blockfive__title">
+          <div class="contacts">
+            <div class="hat__contacts">
+            <div class="heading _comp">
               <span> КОМПАНИЯ «Техномарт»</span>
             </div>
-            <div class="blockfive__description">
-              <span>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-
-                Мы можем доставить ваш товар в самые отдаленные точки России!
-                Техномарт работает со многими транспортными компаниями:</span>
+            <div class="contacts__description description">
+              <span>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</span>
             </div>
-            <div class="blockfive__businessline">
-              <a href="#">Деловые линии</a>
-            </div>
-            <div class="blockfive__autotrade">
-              <a href="#">Автотрейдинг</a>
-            </div>
-            <div class="blockfive__jde">
-              <a href="#">ЖелДорЭкспедиция</a>
-            </div>
-            <div class="blockfive__btnone">
-              <button type="submit">Подробнее о компании</button>
-            </div>
-            <div class="blockfive__contacts">
+            <div class="heading _contacts">
               <a href="">Контакты</a>
             </div>
-            <div class="blockfive__pickup">
+            <div class="description_pickup description">
               Вы можете забрать товар сами, 
               заехав в наш офис:
             </div>
-            <div class="blockfive__img">
+          </div>
+          <div class="middle__contacts">
+          <span class="middle__description description"> Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:</span>
+            <div class="contacts__transcomp">
+              <a class="transcomp_links" href="#">Деловые линии</a>
+              <a class="transcomp_links" href="#">Автотрейдинг</a>
+              <a class="transcomp_links" href="#">ЖелДорЭкспедиция</a>
+            </div>
+            <div class="contacts__img">
               <img src="/img/Слой 5.png" alt="">
             </div>
-            <div class="blockfive__btntwo">
-              <button type="submit">Заблудились? Напишите нам!</button>
+            </div>
+            <div class="footer__contacts">
+              <a href="#" class="btn footcon__btn">Заблудились? Напишите нам!</a>
+              <a href="#" class="btn footcon__btn">Подробнее о компании</a>
             </div>
           </div>
+        </main>
           <footer class="footer">
-            <div class="footer__logo">
+            <div class="logo _size">
               <p>ТЕХНОМАРТ</p>
             </div>
-            <div class="contacts">
+            <div class="information">
               <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
@@ -359,7 +318,6 @@
               <span>Разработано — <a href="htmlacademy.ru" target="_blank">htmlacademy.ru</a></span>
             </div>
           </footer>
-        </main>
       </div>
   </body>
 </html>
