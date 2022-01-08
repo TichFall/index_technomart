@@ -9,44 +9,54 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__top">
-          <div class="container">
-              <p class="logo">ТЕХНОМАРТ</p>
-            <form class="search-btn" method="post" enctype="multipart/form-data">
-              <button>Поиск</button>
+      <div class="header__top">
+        <div class="container">
+          <div class="header-menu">
+            <div class="header__logo">
+              <p>ТЕХНОМАРТ</p>
+            </div>
+              <div class="search">
+            <form class="search__form" method="post" enctype="multipart/form-data">
+              <button class="search__btn">Поиск:</button>
               <input placeholder="Искать здесь..." type="search" />
             </form>
-              <a class="header__items" href="#">Закладки:0</a>
+          </div>
+              <a class="header__items _items-img" href="#">Закладки:0</a>
               <a class="header__items _items-red" href="#">Корзина:10</a>
               <a class="checkout" href="#">Оформить заказ</a>
+          </div>
           </div>
         </div>
         <div class="header__bottom">
           <div class="container">
+            <div class="header__bottom-info">
                 <p class="header-text">
                   Интернет-магазин строительных материалов и инструментов для
                   ремонта
                 </p>
                 <div class="info">
                 <a class="info__number" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p class="info__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              </div>
+                <p class="info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
             <div class="user-menu">
-                <a class="profile" href="">Равшан Джамшутович</a>
-              
-                <a class="user-menu__btn" href="#">Мои заказы</a>
+             <div class="profile">
+                <a href="">Равшан Джамшутович</a>
+              </div> 
+              <div class="input">
+                <a class="user-menu__btn _dot" href="#">Мои заказы</a>
                 <a class="user-menu__btn" href="#">Личный кабинет</a>
+              </div>
             </div>
+          </div>
               <nav class="nav">
-                <ul>
-                  <li><a class="nav__link" href="#">Главная</a></li>
-                  <li><a class="nav__link" href="#">Компания</a></li>
-                  <li><a class="nav__link" href="#">Каталог</a></li>
-                  <li><a class="nav__link" href="#">Новости</a></li>
-                  <li><a class="nav__link" href="#">Спецпредложения</a></li>
-                  <li><a class="nav__link" href="#">Доставка</a></li>
-                  <li><a class="nav__link" href="#">Контакты</a></li>
-                </ul>
+
+                  <a class="nav__link" href="#">Главная</a>
+                  <a class="nav__link" href="#">Компания</a>
+                 <a class="nav__link" href="#">Каталог</a>
+                  <a class="nav__link" href="#">Новости</a>
+                  <a class="nav__link" href="#">Спецпредложения</a>
+                  <a class="nav__link" href="#">Доставка</a>
+                  <a class="nav__link" href="#">Контакты</a>
               </nav>
               </div>
           </div>
@@ -63,7 +73,7 @@
         </div>
         <div class="catalog">
           <section class="catalog-left">
-                <p class="heading-hat">Фильтр:</p>
+                <p class="heading-head">Фильтр:</p>
                 <form class="filter" action="#" method="post" enctype="multipart/form-data">
                   <p class="filter__title">ЦЕНА:</p>
                   <input type="range" min="0" max="30000" placeholder="15000">
@@ -81,8 +91,8 @@
                 </form>
           </section>
           <section class="catalog-right">
-            <div class="catalog-right__hat">
-                   <h2 class="heading_hat">СОРТИРОВКА:</h2>
+            <div class="catalog-right__head">
+                   <h2 class="heading_head">СОРТИРОВКА:</h2>
                    <a href="#" class="catalog-right__menu">ПО ЦЕНЕ</a>
                    <a href="#" class="catalog-right__menu">ПО ТИПУ</a>
                    <a href="#" class="catalog-right__menu">ПО ФУНКЦИОНАЛУ</a>
@@ -166,54 +176,84 @@
         </section>
         </div>
       </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <footer class="footer">
         <div class="footer__top">
           <div class="container">
             <div class="footer__top-left">
-              <p class="logo">ТЕХНОМАРТ</p>
-              <div class="footer__info">
+              <div class="footer__logo">
+              <p >ТЕХНОМАРТ</p>
+            </div>
+              <div class="footer__address">
                 <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+                <a class="footer__number" href="tel:+78125550555">+7 (812) 555-05-55</a>
               </div>
             </div>
             <div class="footer__top-right">
               <div class="footer__nav">
-                <ul>
-                  <li><a href="#" class="footer__nav-link">Компания</a></li>
-                  <li><a href="#" class="footer__nav-link">Новости</a></li>
-                  <li><a href="#" class="footer__nav-link">Каталог</a></li>
-                  <li><a href="#" class="footer__nav-link">Доставка</a></li>
-                  <li><a href="#" class="footer__nav-link">Контакты</a></li>
-                </ul>
+                  <a href="#" class="footer__nav-link">Компания</a>
+                  <a href="#" class="footer__nav-link">Новости</a>
+                  <a href="#" class="footer__nav-link">Каталог</a>
+                  <a href="#" class="footer__nav-link">Доставка</a>
+                  <a href="#" class="footer__nav-link">Контакты</a>
               </div>
               <div class="footer__nav">
-                <ul>
-                  <li><a href="#" class="footer__nav-link _lemon">Материалы</a></li>
-                  <li><a href="#" class="footer__nav-link _lemon">Техника</a></li>
-                  <li><a href="#" class="footer__nav-link _lemon">Инструмент</a></li>
-                  <li><a href="#" class="footer__nav-link _lemon">Спецпредложения</a></li>
-                </ul>
+        
+                 <a href="#" class="footer__nav-link _lemon">Материалы</a>
+                 <a href="#" class="footer__nav-link _lemon">Техника</a>
+                 <a href="#" class="footer__nav-link _lemon">Инструмент</a>
+                 <a href="#" class="footer__nav-link _lemon">Спецпредложения</a>
+
               </div>
             </div>
           </div>
         </div>
+      
         <div class="footer__bottom">
           <div class="container">
-            <p class="footer__txt">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+            <div class="footer__discription">
+            <p class="footer__txt">© 2010–2019 Компания «Техномарт» Все права защищены</p> 
             <div class="social">
-             <a href=""> <img src="/img/icon-vk.png" alt=""></a>
-             <a href=""> <img src="/img/icon-fb.png" alt=""></a>
-             <a href=""> <img src="/img/icon-insta.png" alt=""></a>
+             <a class="social__link" href=""> <img src="/img/icon-vk.png" alt=""></a>
+             <a class="social__link" href=""> <img src="/img/icon-fb.png" alt=""></a>
+             <a class="social__link" href=""> <img src="/img/icon-insta.png" alt=""></a>
             </div>
-            <div class="footer__feedback">
+            <div class="footer__info">
+              <div class="footer__feedback">
               <p class="footer__txt">Обратная связь</p>
               <a class="footer__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>  
+              <div class="footer__creator">
               <p class="footer__txt">Разработано —</p>
               <a class="footer__link" href="htmlacademy.ru">htmlacademy.ru</a>
+              </div>
+            </div>
             </div>
           </div>
-        </div>
+          </div>
       </footer>
-    
+
+
+
+
+
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </body>
 </html>
