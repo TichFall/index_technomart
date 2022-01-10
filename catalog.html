@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style-catalog.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -15,14 +15,12 @@
             <div class="header__logo">
               <p>ТЕХНОМАРТ</p>
             </div>
-              <div class="search">
             <form class="search__form" method="post" enctype="multipart/form-data">
-              <button class="search__btn">Поиск:</button>
-              <input placeholder="Искать здесь..." type="search" />
+              <button type="submit" name="search"  class="search__btn">Поиск:</button>
+              <input class="search__place" type="search" />
             </form>
-          </div>
-              <a class="header__items _items-img" href="#">Закладки:0</a>
-              <a class="header__items _items-red" href="#">Корзина:10</a>
+              <a class="header__items _img-bookmark" href="#">Закладки: 0</a>
+              <a class="header__items _img-cart _red" href="#">Корзина: 10</a>
               <a class="checkout" href="#">Оформить заказ</a>
           </div>
           </div>
@@ -49,7 +47,6 @@
             </div>
           </div>
               <nav class="nav">
-
                   <a class="nav__link" href="#">Главная</a>
                   <a class="nav__link" href="#">Компания</a>
                  <a class="nav__link" href="#">Каталог</a>
@@ -76,7 +73,11 @@
                 <p class="heading-head">Фильтр:</p>
                 <form class="filter" action="#" method="post" enctype="multipart/form-data">
                   <p class="filter__title">ЦЕНА:</p>
-                  <input type="range" min="0" max="30000" placeholder="15000">
+                  <div class="range-strip">
+                    <div class="range">
+                      0 - 30000
+                    </div>
+                  </div>
                   <p class="filter__title">ПРОИЗВОДИТЕЛИ:</p>
                   <p><input class="filter__items" type="checkbox" name="bosh">BOSH</p>
                   <p><input class="filter__items" type="checkbox" name="Интерскол">ИНТЕРСКОЛ</p>
@@ -85,9 +86,9 @@
                   <p><input class="filter__items" type="checkbox" name="Hitachi">Hitachi</p>
                   <br>
                   <p class="filter__title">ПИТАНИЕ:</p>
-                  <p><input class="filter__items" type="radio">Аккумуляторные</p>
-                  <p><input class="filter__items" type="radio">Сетевые</p>
-                  <a href="#" class="filter__btn">ПОКАЗАТЬ</a>
+                  <input class="filter__items" value="accum" type="radio" name="supply">Аккумуляторные
+                  <input class="filter__items" value="network" type="radio" name="supply" >Сетевые
+                  <button type="submit" href="#" class="filter__btn">ПОКАЗАТЬ</button>
                 </form>
           </section>
           <section class="catalog-right">
