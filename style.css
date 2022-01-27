@@ -60,34 +60,29 @@ textarea {
 /* header */
 
  body{
-    max-width: 1200px;
-    margin: 0px auto;
     font-family: 'Cuprum', sans-serif;
  }
  .header{
      width:100%;
      position: relative;
- 
  } 
 
  .container{
      width: 940px;
      margin: 0px auto;
-    position: relative;
+     position: relative;
  }
 
-
 .header__top {
-    max-width: 1200px;
     height: 42px;
     background-color: #32425C;
     position: relative;
 }
 .header-menu {
-    width: 940px;
-    height: 42px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+
 }
 .header__logo {
     color: rgb(255, 255, 255);
@@ -116,56 +111,73 @@ textarea {
 }
 
 .search__form{
-    width: 225px;
+    width: 270px;
     height: 42px;
-    margin-left: 10px;
-    background: url(../img/icon-search.png) 3px 12px no-repeat;
-    position: relative;
 }
-.search__btn{
-    background-color:#32425C ;
-    position: absolute;
-    top: 9px;
-    left: 22px;
-    color: #F3F7F9;
+input::-webkit-input-placeholder { 
+    color: #ffffff; 
+}
+.search__place{
+    padding-left:30px ;
     font-size: 18px;
     line-height: 24px;
-}
-
-.search__place{
-    position: absolute;
-    background-color: #32425C;
     border: none;
-    outline: none;
-    opacity: 0;
-    top: 13px;
-    left: 75px;
+    width: 270px;
+    height: 42px;
+    display: block;
+    display: flex;
+    align-items: center;
 }
-
+.search__img{
+    background: url(./img/icon-search.png) no-repeat 5px 13px;
+}
+.search__img:hover{
+    background: url(/img/ShapeWhite.png) no-repeat 5px 13px;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent
+  }
 .search__place:focus{
-    border-radius: 8px;
-    background-color: #F3F7F9;
+    background: url(./img/ShapeRed.png) no-repeat 5px 13px;
+    padding-left:30px;
+    transition: 0.2s;
     opacity: 1;
+    outline: 0;
+    outline-offset: 0;
+    background-color: #F3F7F9;
 }
 .header__items {
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 136px;
+    width: 100%;
+    max-width: 136px;
     height: 42px;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 30px;
+    margin-left: 14px;
+    padding: 17px 20px;
 }
-
+.header__items:active{
+    opacity: 0.6;
+}
 ._img-bookmark{
-    background: url(../img/icon-bookmark.png) no-repeat 5px 13px;
+    background: url(./img/icon-bookmark.png) no-repeat 5px 13px;
+}
+._img-bookmark:hover{
+    background: url(./img/bookmark_white.png) no-repeat 5px 13px;
 }
 ._img-cart {
-    background: url(../img/icon-cart.png) no-repeat 5px 13px;
+    background: url(./img/icon-cart.png) no-repeat 5px 13px;
+}
+._img-cart:hover{
+    background: url(./img/icon-cart_white.png) no-repeat 5px 13px;
 }
 ._red{
+    background-color:rgba(238, 54, 67, 1);
+}
+._red:hover{
     background-color:rgba(238, 54, 67, 1);
 }
 .checkout {
@@ -179,15 +191,14 @@ textarea {
     width: 150px;
     height: 42px;
 }
-
+.checkout:active{
+    opacity: 0.4;
+}
 .header__bottom{
     display: flex;
-    justify-content: center;
     align-items: center;
-    max-width: 100%;
-    height: 278px;
     background-color: #F3F7F9;
-    margin: auto;
+    
 }
 .header-text{
     display: block;
@@ -203,7 +214,6 @@ textarea {
 }
 
 .header__bottom-info{
-    width: 939px;
     height: 154px;
     display: flex;
     justify-content: space-between;
@@ -224,7 +234,7 @@ textarea {
     width: 270px;
     height: 45px;
     color: rgba(238, 54, 67, 1) ;
-    background: url(../img/icon-phone.png) 25px 10px no-repeat;
+    background: url(./img/icon-phone.png) 25px 10px no-repeat;
 }
 .info__address{
     display: flex;
@@ -251,7 +261,7 @@ textarea {
 	height: 45px;
     font-size: 21px;
     line-height: 21px;
-	background: white url(../img/icon-login.png) no-repeat 10px 12px;
+	background: white url(./img/icon-login.png) no-repeat 10px 12px;
 	display: block;
 	display:flex;
 	justify-content: center ;
@@ -259,6 +269,9 @@ textarea {
 }
 .authorization__input:hover{
     color: rgba(238, 54, 67, 1);
+}
+.authorization__input:active{
+    color: darkgray;
 }
 
 .authorization__reg{
@@ -276,6 +289,9 @@ textarea {
 .authorization__reg:hover{
     color: rgba(238, 54, 67, 1);
 }
+.authorization__reg:active{
+    color: gray;
+}
 .user-menu{
     width: 315px;
     height: 110px;
@@ -284,8 +300,8 @@ textarea {
     color: #000;
     font-size: 21px;
     font-weight: 400;
-    background: url(../img/icon-login-2.png) no-repeat 93% 50%,
-                url(../img/icon-user.png) no-repeat 7% 47%
+    background: url(./img/icon-login-2.png) no-repeat 93% 50%,
+                url(./img/icon-user.png) no-repeat 7% 47%
                 #fff;
     display: flex;
     justify-content: center;
@@ -342,29 +358,29 @@ textarea {
 .nav__link {
     font-size: 18px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 24px;
     color: #F3F7F9;
+    padding: 18px 20px;
 }  
 .nav__link:hover{
-    border-bottom: 1px solid white;
+    background-color: #293449;
+}
+.nav__link:active{
+    color: grey;
+    background-color: #293449;
 }
 
 
 
 /* footer */
 
-.footer {
-    width: 1200px;
-}
 
 .footer__top{
-    width: 1200px;
     height: 192px;
     position: relative;
     background-color: #32425C;
 }
 .footer__top-left{
-    width: 326px;
     height: 192px;
 }
 
@@ -397,7 +413,6 @@ textarea {
     margin-top: 10px;
     content: "";
     height: 6px;
-    width: 220px;
     background-color: #a32e36ea;
     position: absolute;
     top: 54px;
@@ -408,8 +423,7 @@ textarea {
 .footer__top-right{
     position: absolute;
     top: 35px;
-    left: 400px;
-    width: 530px;
+    left: 500px;
     height: 87px;
     display: flex;
     justify-content: space-between;
@@ -422,6 +436,10 @@ textarea {
     font-weight: 400;
     line-height: 15px;
 }
+
+.footer__nav-link:hover{
+    border-bottom: 1px solid white;
+}
 .footer__nav-link{
     color: white;
 }
@@ -429,17 +447,15 @@ textarea {
     color: #FFD180;
     margin-left: 20px;
 }
-.footer__nav-link:hover{
-    border-bottom: 1px solid white;
-}
-
 ._lemon:hover{
     border-bottom: 1px solid #FFD180;
 }
-
+.footer__nav-link:active{
+    opacity: 0.5;
+    border: none;
+}
 .footer__bottom{
     background-color: #293449;
-    width: 1200px;
 }
 .footer__discription {
     display:block;
@@ -455,7 +471,6 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     width: 227px;
-    margin-right: 70px;
 }
 
 .social{
@@ -481,26 +496,20 @@ textarea {
 .social__link:hover{
     background-color: #EE3643;
 }
+.social__link:active{
+    background-color: #EE3643;
+}
 .footer__info{
-    width: 302px;
-    height: 54px;
+    margin-left: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 55px;
 }
 
-.footer__feedback{
+.footer__answer{
+    padding: 0 15px;
+    width: 150px;
     font-size: 16px;
-    width: 151px;
-    line-height: 15px;
-    font-weight: 400;
-}
-.footer__creator{
-    font-size: 16px;
-    width: 151px;
-    line-height: 15px;
-    font-weight: 400;
+    line-height: 18px;
 }
 
 .footer__link {
@@ -510,4 +519,9 @@ textarea {
 .footer__link:hover{
     text-decoration: underline;
 }
+.footer__link:active{
+    color: #EE3643;
+    text-decoration: none;
+}
+
 
