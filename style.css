@@ -1,819 +1,322 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header-menu">
+            <div class="header__logo">
+              <p>ТЕХНОМАРТ</p>
+            </div>
+            <form class="search__form" method="post" enctype="multipart/form-data">
+              <input class="search__place search__img" placeholder="Поиск:" type="search" />
+            </form>
+              <a class="header__items _img-bookmark" href="#">Закладки: 0</a>
+              <a class="header__items _img-cart" href="#">Корзина: 0</a>
+              <a class="checkout" href="#">Оформить заказ</a>
+          </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-info">
+                <p class="header-text">
+                  Интернет-магазин строительных материалов и инструментов для
+                  ремонта
+                </p>
+                <div class="info">
+                <a class="info__number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                <p class="info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
+                <div class="authorization">
+                  <a class="authorization__input" href="#">Войти</a>
+                  <a class="authorization__reg" href="#">Регистрация</a>
+              </div>
+          </div>
+              <nav class="nav">
 
-blockquote,
-body,
-dd,
-dl,
-figcaption,
-figure,
-h1,
-h2,
-h3,
-h4,
-li,
-ol,
-p,
-ul {
-    margin: 0;
-}
-
-body {
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    overflow-x: hidden;
-    height: 100%;
-}
-
-ol,
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    font-family: inherit;
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-button {
-    cursor: pointer;
-    border: none;
-}
-
-button,
-input,
-select,
-textarea {
-    font-family: inherit;
-}
-
-/* header */
-
- body{
-    font-family: 'Cuprum', sans-serif;
-    min-width: 940px;
- }
- .header{
-     width:100%;
-     position: relative;
- } 
-
-.container{
-     width: 940px;
-     margin: 0px auto;
-     position: relative;
-     background: inherit;
-}
-
-.header__top {
-    height: 42px;
-    background-color: #32425C;
-    position: relative;
-}
-.header-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.header__logo {
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-    font-weight: 400;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 220px;
-    height: 42px;
-    background-color: rgba(238, 54, 67, 1);
-    position: relative;
-}
-
-.header__logo::after{
-    display: block;
-    margin-top: 10px;
-    content: "";
-    height: 4px;
-    width: 220px;
-    background-color: #a32e36ea;
-    position: absolute;
-    top: 32px;
-    left: 0;
-    z-index: 1;
-}
-
-.search__form{
-    width: 270px;
-    height: 42px;
-}
-input::-webkit-input-placeholder { 
-    color: #ffffff; 
-}
-.search__place{
-    padding-left:30px ;
-    font-size: 18px;
-    line-height: 24px;
-    border: none;
-    width: 270px;
-    height: 42px;
-    display: block;
-    display: flex;
-    align-items: center;
-}
-.search__img{
-    background: url(./img/icon-search.png) no-repeat 5px 13px;
-}
-.search__img:hover{
-    background: url(./img/ShapeWhite.png) no-repeat 5px 13px;
-}
-:focus::-webkit-input-placeholder {
-    color: transparent
-  }
-.search__place:focus{
-    background: url(./img/ShapeRed.png) no-repeat 5px 13px;
-    padding-left:30px;
-    transition: 0.2s;
-    opacity: 1;
-    outline: 0;
-    outline-offset: 0;
-    background-color: #F3F7F9;
-}
-.header__items {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 136px;
-    height: 42px;
-    font-size: 18px;
-    font-weight: 400;
-    margin-left: 14px;
-    padding: 17px 20px;
-}
-.header__items:active{
-    opacity: 0.6;
-}
-._img-bookmark{
-    background: url(./img/icon-bookmark.png) no-repeat 5px 13px;
-}
-._img-bookmark:hover{
-    background: url(./img/bookmark_white.png) no-repeat 5px 13px;
-}
-._img-cart {
-    background: url(./img/icon-cart.png) no-repeat 5px 13px;
-}
-._img-cart:hover{
-    background: url(./img/icon-cart_white.png) no-repeat 5px 13px;
-}
-._red{
-    background-color:rgba(238, 54, 67, 1);
-}
-._red:hover{
-    background-color:rgba(238, 54, 67, 1);
-}
-.checkout {
-    color: #fff;
-    font-weight: 400;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #63A63E ;
-    width: 150px;
-    height: 42px;
-}
-.checkout:active{
-    opacity: 0.4;
-}
-.header__bottom{
-    display: flex;
-    align-items: center;
-    background-color: #F3F7F9;
-    
-}
-.header-text{
-    display: block;
-    display: flex;
-    font-size: 16px;
-    font-style: italic;
-    color: #EE3643;
-    line-height: 23px;
-    margin-left: 30px;
-    width: 197px;
-    height: 71px;
-    margin-bottom: 20px;
-}
-
-.header__bottom-info{
-    height: 154px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.info{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-}
-.info__number{
-    font-size: 21px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid #fff;
-    width: 270px;
-    height: 45px;
-    color: rgba(238, 54, 67, 1) ;
-    background: url(./img/icon-phone.png) 25px 10px no-repeat;
-}
-.info__address{
-    display: flex;
-    justify-content: center;
-    width: 270px;
-    padding: 5px 0;
-    line-height: 24px;
-    font-size: 14px;
-    text-align: center;
-}
-
-.authorization{
-	width: 282px;
-	height: 47px;
-	display: block;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-    margin-bottom: 35px;
-}
-.authorization__input{
-   
-	width: 121px;
-	height: 45px;
-    font-size: 21px;
-    line-height: 21px;
-	background: white url(./img/icon-login.png) no-repeat 10px 12px;
-	display: block;
-	display:flex;
-	justify-content: center ;
-	align-items: center;
-}
-.authorization__input:hover{
-    color: rgba(238, 54, 67, 1);
-}
-.authorization__input:active{
-    color: darkgray;
-}
-
-.authorization__reg{
-    background-color: white;
-    display: block;
-	display:flex;
-	justify-content: center ;
-	align-items: center;
-    font-size: 21px;
-    line-height: 21px;
-    width: 150px;
-    height: 45px;
-    font-weight: 400;
-}
-.authorization__reg:hover{
-    color: rgba(238, 54, 67, 1);
-}
-.authorization__reg:active{
-    color: gray;
-}
-.user-menu{
-    width: 315px;
-    height: 110px;
-}
-.profile{
-    color: #000;
-    font-size: 21px;
-    font-weight: 400;
-    background: url(./img/icon-login-2.png) no-repeat 93% 50%,
-                url(./img/icon-user.png) no-repeat 7% 47%
-                #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 299px;
-    height: 45px;
-    margin-top: 12px;
-}
-.input {
-    width: 300px;
-    height: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    right: 3px;
-    padding: 0px 34px;
-}
-.user-menu__btn{
-    font-size: 16px;
-    line-height: 18px;
-    margin: 0 5px;
-    font-weight: 400;
-    color: rgba(50, 66, 92, 1);
-    border-bottom: 1px solid #293449;
-}
-.user-menu__btn:hover{
-    color: #EE3643;
-    border-bottom: 1px solid #EE3643;
-}
-
-._dot::after{
-    position: absolute;
-    content: "";
-    border-radius:100% ;
-    width: 5px;
-    height: 5px;
-    background-color: rgba(50, 66, 92, 1);
-    top: 13px;
-    left: 134px;
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 940px;
-    height: 60px;
-    background-color: #32425C;
-    margin-bottom: 60px;
-    padding:0 53px ;
-    box-shadow: inset 0px -5px 0px #293449;
-}
-.nav__link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #F3F7F9;
-    padding: 18px 20px;
-}  
-.nav__link:hover{
-    background-color: #293449;
-}
-.nav__link:active{
-    color: grey;
-    background-color: #293449;
-}
-
-/* menu */
-.menu{
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 409px;
-    overflow: hidden;
-    margin-top:59px ;
-    }  
-.items{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 123px;
-    position: relative;
-    margin-bottom: 20px;
-}
-.items._yellow{
-    background-color:#FFBF47;
-}    
-.items__heading{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    top: 20px;
-    left: 23px;
-}
-.items__img{
-    position: absolute;
-    top: 34px;
-    left: 194px;
-}
-.items__btn{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 64px;
-    right: 143px;
-    width: 135px;
-    height: 38px;
-    background: #ffffff5d;
-    color: #F3F7F9;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-.items__btn:hover{
-    background: #c5c5c55d;
-}
-.items__btn:active{
-    background: #a9a9a957;
-}
-.items._purple{
-    background: #DC91D8;
-}
-.items._green{
-    background-color:#8ED78F;
-}
-.items._blue{
-    background: #3BBCE3;
-}
-.new-link__img{
-    position: absolute;
-    right: 0px;
-}
-.slider{
-    width: 620px;
-    height: 266px;
-    background: url(img/Layer\ 99.png) no-repeat;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-.slider__heading-shadow{
-    background: rgba(0, 0, 0, 0.25);
-    width: 620px;
-    height: 104px;
-    padding: 24px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column  ;
-}
- .slider__heading{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 36px;
-    color: white;
-}
-.slider__title{
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color:white;
-} 
-.slider__btn{
-    position: absolute;
-    bottom: 27px;
-    left: 24px;
-    background: #EE3643;
-    width: 192px;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #F3F7F9;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-.slider__btn:hover{
-    background: #CA2C37;
-}
-.slider__btn:active{
-    background: #BA2732;
-}
-
-/* Products */
-.products{
-    margin-top: 59px;
-    height: 427px;
-}
-.products__head{
-    width: 100%;
-    height: 89px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 28px;
-    padding-right: 14px;
-    background: #F9F5F0;
-}
-.heading{
-    color: rgba(50, 66, 92, 1);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 30px;
-}
-.btn{
-    background: #EE3643;
-    width: 192px;
-    height: 38px;
-    font-size: 14px;
-    line-height: 18px;  
-    color: #F3F7F9;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items:center;     
-}
-.btn:hover{
-    background: #CA2C37;
-}
-.btn:active{
-    background: #BA2732;
-}
-.cards{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.card{
-    width: 220px;
-    height: 318px;
-    position: relative;
-    border: #EAEAEA solid 1px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-.card-menu{
-    width: 133px;
-    height: 88px;
-    position: absolute;
-    top: 38px;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transition: all .5s;
-}
-.card-menu__bookmark {
-    width: 135px;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    color: #32425C;
-    border: 3px solid #63A63E;
-    border-radius: 2px;
-    text-transform: uppercase;
-}
-.card-menu__buy {
-    width: 135px;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #63A63E url(img/icon-cart.png) no-repeat 25px 10px;
-    color: white;
-    border-radius: 2px;
-    box-shadow: inset 0px -3px 0px #367315;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-.card-menu__buy:hover{
-    background: #5FBB2D url(img/icon-cart.png) no-repeat 25px 10px;
-}
-.card-menu__buy:active{
-    background: #518534 url(img/icon-cart.png) no-repeat 25px 10px;
-}
-.card-menu__bookmark:hover{
-    border: 3px solid #32425C;
-    box-sizing: border-box;
-    border-radius: 2px;
-}
-.card-menu__bookmark:active{
-    opacity: 0.5;
-}
-.card:hover .card-menu{
-    opacity: 1;
-}
-.card__new{
-    position: absolute;
-    right: 0px;
-}
-.card__img{
-    position: relative;
-    margin-top: 20px;
-}
-.card__img:hover{
-    display: none;
-    opacity: 0;
-}
+                  <a class="nav__link" href="#">Главная</a>
+                  <a class="nav__link" href="#">Компания</a>
+                 <a class="nav__link" href="#">Каталог</a>
+                  <a class="nav__link" href="#">Новости</a>
+                  <a class="nav__link" href="#">Спецпредложения</a>
+                  <a class="nav__link" href="#">Доставка</a>
+                  <a class="nav__link" href="#">Контакты</a>
+              </nav>
+              </div>
+          </div>
+      </header>
 
 
-.card__button{
-    position: absolute;
-    bottom: 21px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(img/Shape.png);
-    width: 141px;
-    height: 38px;
-    color: #F3F7F9;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-}
-.card__name{
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    position: absolute;
-    bottom: 97px;
-}
-.card__discount{
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 18px;
-    color: #A9A9A9;
-    text-decoration: line-through;
-    position: absolute;
-    bottom: 72px;
-}
-
-/* manufacturers */
-.manufacturers{
-    margin-top:70px ;
-}
-.manufacturers__head{
-    width: 100%;
-    height: 89px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 28px;
-    padding-right: 14px;
-    background: #F9F5F0;
-}
-.brands{
-    height: 310px;
-    margin-top: 20px;
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.brands__link:hover{
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-}
-.brands__link:active{
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-    opacity: 0.5;
-}
-.brands__link{
-    width: 225px;
-    height: 145px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border: #EAEAEA solid 1px;
-}
-
-/* footer */
 
 
-.footer__top{
-    width: 100%;
-    height: 192px;
-    background-color: #32425C;
-}
-.footer__top-head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.second-nav{
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 0.51;
-    margin-top: 33px;
-    font-size: 18px;
-    line-height: 17px;
-    color: rgba(241, 245, 247, 1);
-}
-.second-nav-link:active{
-    opacity: 0.6;
-}
-.second-nav-link:hover{
-    border-bottom:1px white solid ;
-}
-.footer__top-bottom{
-    margin-top: 27px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer__address{
-    font-size: 18px;
-    line-height: 24px;
-    color: rgba(241, 245, 247, 1);
-}
-.catalog-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 0.53;
-    color: rgba(255, 209, 128, 1);
-    font-size: 18px;
-    line-height: 17px;
-    margin-bottom: 16px;
-}
-.catalog-nav:active{
-    opacity: 0.6;
-}
-.catalog-nav-link:hover{
-    border-bottom: 1px rgba(255, 209, 128, 1) solid ;
-}
-.footer__logo {
-    color: rgb(255, 255, 255);
-    font-size: 28px;
-    font-weight: 400;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 220px;
-    height: 64px;
-    background-color: rgba(238, 54, 67, 1);
-    position: relative;
-}
-.footer__bottom{
-    height: 107px;
-    background-color: #293449;
-}
-.footer__discription{
-    height: 107px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer__txt{
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-}
-.social{
-    height: 60px;
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-}
-.social__link{
-    display: block;
-    border-radius: 100%;
-    width: 44px;
-    height: 44px;
-    background-color: #212A3A;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social__link:hover{
-    background-color: #EE3643;
-}
-.social__link:active{
-    background-color: #EE3643;
-}
-.footer__info{
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer_answer{
-    font-size: 16px;
-    line-height: 18px;
-}
-.footer__link {
-    color: #FFD180;
-}
+        <main class="main">
+            <div class="container">
+              <div class="menu">
+            <div class="items _yellow">
+                <p class="items__heading">Материалы</p>
+                <img class=new-link__img src="img/Каталог new.png" alt="">
+                <img class="items__img" src="img/icon-1.png" alt="Материалы">
+                <a href="#" class="items__btn">на любой вкус</a>
+            </div>
+            <div class="items _blue">
+                <p class="items__heading">Инструменты</p>
+                <img class="items__img" src="img/icon-2.png" alt="Материалы">
+                <a href="#" class="items__btn">на все случаи</a>
+            </div>
+            <div class="items _purple">
+                <p class="items__heading">Техника</p>
+                <img class="items__img" src="img/icon-3.png" alt="Материалы">
+                <a href="#" class="items__btn">для стройки</a>
+            </div>
+           
 
-.footer__link:hover{
-    text-decoration: underline;
-}
-.footer__link:active{
-    color: #EE3643;
-    text-decoration: none;
-}
+
+
+
+        
+              <div class="slider">
+                <div class="slider__heading-shadow">
+                    <p class="slider__heading">перфораторы</p>
+                    <p class="slider__title">Настоящие мужские игрушки</p> 
+                </div>             
+                    <a href="#" class="slider__btn">открыть каталог</a>
+              </div>
+
+
+
+              <div class="items-right">
+      
+                <div class="items _green">
+                  <p class="items__heading">Скидки 50%</p>
+                  <img class="items__img" src="img/icon-4.png" alt="Материалы">
+                  <a href="#" class="items__btn">На 350 ТОВАРОВ</a>
+                </div>
+                <div class="items _yellow">
+                  <p class="items__heading">Доставка</p>
+                  <img class="items__img" src="img/icon-5.png" alt="Материалы">
+                  <a href="#" class="items__btn">Бесплатно</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          
+
+
+
+          <div class="container">
+            <div class="products">
+              <div class="products__head">
+                
+                  <p class="heading">Популярные товары:</p>
+                          
+                  <a class="btn hat__btn" href="#">все популярные товары</a>             
+              </div>
+
+
+
+              <div class="cards">
+                <div class="card">
+                  <div class="card-menu">
+                    <a href="#" class="card-menu__buy">Купить</a>
+                    <a href="#" class="card-menu__bookmark">в закладки</a>
+                 </div>
+                    <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
+                    <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
+                    <p class="card__discount">32500 Р.</p>   
+                    <a class="card__button" href="#">25500 Р.</a>               
+                </div>
+
+
+                <div class="card">
+                  <div class="card-menu">
+                    <a href="#" class="card-menu__buy">Купить</a>
+                    <a href="#" class="card-menu__bookmark">в закладки</a>
+                 </div>                   
+                    <img class="card__new" src="img/Каталог new.png" alt="">             
+                    <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                    <p class="card__name">Перфоратор BOSCH <br> BFG 3000</p>
+                    <p class="card__discount">22500 Р.</p>
+                    <a class="card__button" href="#">15500 Р.</a>
+                </div>
+
+                <div class="card">
+                  <div class="card-menu">
+                     <a href="#" class="card-menu__buy">Купить</a>
+                     <a href="#" class="card-menu__bookmark">В закладки</a>
+                  </div>        
+                  <img class="card__img" src="img/snippet-945 copy 2.png" alt="">
+                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 6000</a>
+                  <p class="card__discount">30500 Р.</p>
+                  <a class="card__button" href="#">25500 Р.</a>               
+                </div>
+
+
+                <div class="card">
+                  <div class="card-menu">
+                    <a href="#" class="card-menu__buy">Купить</a>
+                    <a href="#" class="card-menu__bookmark">в закладки</a>
+                 </div>               
+                  <img class="card__new" src="img/Каталог new.png" alt="">                 
+                 <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                  <p class="card__name">Перфоратор BOSCH <br> BFG 2000</p>
+                  <a class="card__button" href="#">12500 Р.</a>
+                </div>            
+              </div>
+            </div>
+          </div>
+
+          <div class="manufacturers">
+            <div class="container">
+              <div class="manufacturers__head">
+                  <p class="heading">Популярные производители:</p>      
+                  <a class="btn " href="#">все производители</a>             
+              </div>
+              <div class="brands">
+                
+                  <a href="#" class="brands__link"> <img src="img/bosch.png" alt=""></a> 
+                  <a href="#" class="brands__link"> <img src="img/Makita.png" alt=""></a> 
+                  <a href="#" class="brands__link"> <img src="img/DeWALT.png" alt=""></a>
+                  <a href="#" class="brands__link"> <img src="img/Интерскол.png" alt=""></a>
+                  <a href="#" class="brands__link"> <img src="img/Hitachi.png" alt=""></a>
+                  <a href="#" class="brands__link"> <img src="img/LG.png" alt=""></a>           
+                  <a href="#" class="brands__link"> <img src="img/Object.png" alt=""> </a>  
+                  <a href="#" class="brands__link"> <img src="img/metabo.png" alt=""></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+        <div class="service">
+          <div class="container">
+              <div class="service__top">
+                <h2 class="heading">Сервисы</h2>
+              <div class="description">
+                <p>Хороший интернет-магазин отличается от плохого не только ценами!
+                  Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+              </div>
+            </div>
+            <div class="service__bottom">
+                <div class="service-menu">
+                    <a class="service-menu__link" href="#">Доставка</a>
+                    <a class="service-menu__link" href="#">Гарантия</a>
+                    <a class="service-menu__link" href="#">Кредит</a>
+                </div>
+                <div class="delivery">
+                  <h2 class="heading _dark-blue">Доставка</h2>
+                    <p class="description">Мы с удовольствием доставим ваш товар прямо 
+                      к вашему подъезду совершенно бесплатно!
+                      Ведь мы неплохо заработаем, 
+                      поднимая его на ваш этаж!</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+          <div class="contacts">
+            <div class="container">
+              <div class="contacts__left">
+                <h2 class="heading"> КОМПАНИЯ «Техномарт»</h2>
+                <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+                <p class="description"> Мы можем доставить ваш товар в самые отдаленные точки России!
+                  Техномарт работает со многими транспортными компаниями:</p>
+                <ul>
+                  <li class="contacts__list">Деловые линии</li>
+                  <li class="contacts__list">Автотрейдинг</li>
+                  <li class="contacts__list">ЖелДорЭкспедиция</li>
+                </ul>
+                <a href="#" class="btn">Подробнее о компании</a>  
+              </div>
+              <div class="contacts__right">
+                <h2 class="heading">КОНТАКТЫ</h2>
+                <p class="discription">Вы можете забрать товар сами, 
+                  заехав в наш офис:</p>
+                  <img class="map" src="img/Слой 5.png" alt="">
+                  <a href="#" class="btn">Заблудились? НАПИШИТЕ НАМ!</a>
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+
+
+
+        <footer class="footer">
+          <div class="footer__top">
+            <div class="container">
+              <div class="footer__top-head">
+                <div class="footer__logo">
+                <p >ТЕХНОМАРТ</p>
+              </div>
+                <div class="second-nav">
+                  <a href="#" class="second-nav-link">Компания</a>
+                  <a href="#" class="second-nav-link">Новости</a>
+                  <a href="#" class="second-nav-link">Каталог</a>
+                  <a href="#" class="second-nav-link">Доставка</a>
+                  <a href="#" class="second-nav-link">Контакты</a>
+                </div>
+              </div>
+              <div class="footer__top-bottom">
+                <div class="footer__address">
+                  <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                  <a class="footer__number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                </div>
+                <div class="catalog-nav">
+                   <a href="#" class="catalog-nav-link">Материалы</a>
+                   <a href="#" class="catalog-nav-link">Техника</a>
+                   <a href="#" class="catalog-nav-link">Инструмент</a>
+                   <a href="#" class="catalog-nav-link">Спецпредложения</a>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="footer__discription">
+              <p class="footer__txt">© 2010–2019 Компания «Техномарт» <br> Все права защищены</p> 
+              <div class="social">
+               <a class="social__link" href=""> <img src="img/icon-vk.png" alt=""></a>
+               <a class="social__link" href=""> <img src="img/icon-fb.png" alt=""></a>
+               <a class="social__link" href=""> <img src="img/icon-insta.png" alt=""></a>
+              </div>
+              <div class="footer__info">
+                <div class="footer__answer">
+                <p class="footer__txt">Обратная связь</p>
+                <a class="footer__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </div>    
+              <div class="footer__answer">
+                <p class="footer__txt">Разработано —</p>
+                <a class="footer__link" href="htmlacademy.ru">htmlacademy.ru</a>
+              </div>   
+              </div>
+              </div>
+              </div>
+        </footer>
+      </div>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+      <script src="/work.js"></script>
+  </body>
+</html>
