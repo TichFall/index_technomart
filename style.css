@@ -460,13 +460,11 @@ input::-webkit-input-placeholder {
     flex-direction: column  ;
 }
  .slider__heading{
-    
     text-transform: uppercase;
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
     color: white;
-  
 }
 .slider__title{
     font-size: 18px;
@@ -478,7 +476,7 @@ input::-webkit-input-placeholder {
     position: absolute;
     bottom: 27px;
     left: 24px;
-    background: url(img/slider-btn.png);
+    background: #EE3643;
     width: 192px;
     height: 38px;
     display: flex;
@@ -519,7 +517,7 @@ input::-webkit-input-placeholder {
     line-height: 30px;
 }
 .btn{
-    background: url(img/slider-btn.png);
+    background: #EE3643;
     width: 192px;
     height: 38px;
     font-size: 14px;
@@ -552,7 +550,7 @@ input::-webkit-input-placeholder {
     align-items: center;
 }
 .card-menu{
-    width: 138px;
+    width: 133px;
     height: 88px;
     position: absolute;
     top: 38px;
@@ -561,6 +559,7 @@ input::-webkit-input-placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: all .5s;
 }
 .card-menu__bookmark {
     width: 135px;
