@@ -562,7 +562,6 @@ input::-webkit-input-placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transition: all .5s;
 }
 .card-menu__bookmark {
     width: 135px;
@@ -604,6 +603,9 @@ input::-webkit-input-placeholder {
 .card-menu__bookmark:active{
     opacity: 0.5;
 }
+.card:hover .card__img{
+    display: none;
+}
 .card:hover .card-menu{
     opacity: 1;
 }
@@ -613,12 +615,12 @@ input::-webkit-input-placeholder {
 }
 .card__img{
     position: relative;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .card__img:hover{
     display: none;
     opacity: 0;
-}
+} 
 
 
 .card__button{
@@ -793,6 +795,7 @@ input::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 2px;
 }
 .social__link:hover{
     background-color: #EE3643;
