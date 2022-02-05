@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
   </head>
   <body>
     <header class="header">
@@ -81,14 +83,26 @@
 
 
 
-        
-              <div class="slider">
+            <div class="owl-carousel">
+              <div class="slider" style="width: 620px;">
                 <div class="slider__heading-shadow">
                     <p class="slider__heading">перфораторы</p>
                     <p class="slider__title">Настоящие мужские игрушки</p> 
                 </div>             
                     <a href="#" class="slider__btn">открыть каталог</a>
               </div>
+              <div class="slider-two">
+                <div class="slider__heading-shadow">
+                    <p class="slider__heading">Дрели</p>
+                    <p class="slider__title">Соседям на радость</p> 
+                </div>             
+                    <a href="#" class="slider__btn">открыть каталог</a>
+              </div>
+              <div class="owl-dots">
+                <button role="button" class="owl-dot">btn1</button>
+                <button role="button" class="owl-dot">btn2</button>
+              </div>
+            </div>
 
 
 
@@ -202,7 +216,7 @@
               <div class="service__top">
                 <h2 class="heading">Сервисы</h2>
               <div class="description">
-                <p>Хороший интернет-магазин отличается от плохого не только ценами!
+                <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
                   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
               </div>
             </div>
@@ -213,10 +227,10 @@
                     <a class="service-menu__link" href="#">Кредит</a>
                 </div>
                 <div class="delivery">
-                  <h2 class="heading _dark-blue">Доставка</h2>
-                    <p class="description">Мы с удовольствием доставим ваш товар прямо 
-                      к вашему подъезду совершенно бесплатно!
-                      Ведь мы неплохо заработаем, 
+                  <h2 class="heading">Доставка</h2>
+                    <p class="description">Мы с удовольствием доставим ваш товар прямо <br>
+                      к вашему подъезду совершенно бесплатно! <br>
+                      Ведь мы неплохо заработаем, <br>
                       поднимая его на ваш этаж!</p>
                 </div>
             </div>
@@ -230,27 +244,29 @@
 
 
 
-
+        <div class="container">
           <div class="contacts">
-            <div class="container">
               <div class="contacts__left">
                 <h2 class="heading"> КОМПАНИЯ «Техномарт»</h2>
-                <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                <p class="description"> Мы можем доставить ваш товар в самые отдаленные точки России!
+                <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить <br> на гастарбайтерах.
+                  <br>
+                  <br>
+                  Мы можем доставить ваш товар в самые отдаленные точки России!
                   Техномарт работает со многими транспортными компаниями:</p>
-                <ul>
-                  <li class="contacts__list">Деловые линии</li>
-                  <li class="contacts__list">Автотрейдинг</li>
-                  <li class="contacts__list">ЖелДорЭкспедиция</li>
-                </ul>
-                <a href="#" class="btn">Подробнее о компании</a>  
+                <div class="contacts__list">
+                  <a href="#" class="contacts__list-link">Деловые</a>
+                  <a href="#" class="contacts__list-link">Автотрейдинг</a>
+                  <a href="#" class="contacts__list-link">ЖелДорЭкспедиция</a>
+                </div>    
+                
+                <a href="#" class="btn _size">Подробнее о компании</a>  
               </div>
               <div class="contacts__right">
                 <h2 class="heading">КОНТАКТЫ</h2>
-                <p class="discription">Вы можете забрать товар сами, 
-                  заехав в наш офис:</p>
+                <p class="description">Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+                <br>
                   <img class="map" src="img/Слой 5.png" alt="">
-                  <a href="#" class="btn">Заблудились? НАПИШИТЕ НАМ!</a>
+                  <a href="#" class="btn _size-btn">Заблудились? НАПИШИТЕ НАМ!</a>
               </div>
             </div>
           </div>
@@ -313,10 +329,29 @@
               </div>
               </div>
         </footer>
+        <div class="owl-carousel">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
+
       </div>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-      <script src="/work.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="owl.carousel.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          items:1,
+          dots: true
+        });
+      });
+      </script>
   </body>
 </html>
