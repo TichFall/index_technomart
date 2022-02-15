@@ -39,7 +39,7 @@
              <div class="profile">
                 <a href="">Равшан Джамшутович</a>
               </div> 
-              <div class="input">
+              <div class="input-user">
                 <a class="user-menu__btn _dot" href="#">Мои заказы</a>
                 <a class="user-menu__btn" href="#">Личный кабинет</a>
               </div>
@@ -69,35 +69,38 @@
         </div>
         <div class="catalog">
           <section class="catalog-left">
-                <p class="heading-head">Фильтр:</p>
+            <div class="catalog__head">
+              <p class="heading__head">Фильтр:</p>
+            </div>
                 <form class="filter" action="#" method="post" enctype="multipart/form-data">
+                  <div class="range">
                   <p class="filter__title">ЦЕНА:</p>
-                  <div class="range-strip">
-                    <div class="range">
                       0 - 30000
                     </div>
+                  <div class="filter__products">               
+                    <p class="filter__title">ПРОИЗВОДИТЕЛИ:</p>
+                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="bosh">BOSH</p>
+                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Интерскол">ИНТЕРСКОЛ</p>
+                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Makita">MAKIta</p>
+                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Dewalt">Dewalt</p>
+                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Hitachi">Hitachi</p>
                   </div>
-                  <p class="filter__title">ПРОИЗВОДИТЕЛИ:</p>
-                  <p><input class="filter__items" type="checkbox" name="bosh">BOSH</p>
-                  <p><input class="filter__items" type="checkbox" name="Интерскол">ИНТЕРСКОЛ</p>
-                  <p><input class="filter__items" type="checkbox" name="Makita">MAKIta</p>
-                  <p><input class="filter__items" type="checkbox" name="Dewalt">Dewalt</p>
-                  <p><input class="filter__items" type="checkbox" name="Hitachi">Hitachi</p>
-                  <br>
-                  <p class="filter__title">ПИТАНИЕ:</p>
-                  <input class="filter__items" value="accum" type="radio" name="supply">Аккумуляторные
-                  <input class="filter__items" value="network" type="radio" name="supply" >Сетевые
-                  <button type="submit" href="#" class="filter__btn">ПОКАЗАТЬ</button>
+                  <div class="filter__type">
+                    <p class="filter__title">ПИТАНИЕ:</p>
+                    <input class="filter__items" value="accum" type="radio" name="supply">Аккумуляторные
+                    <input class="filter__items" value="network" type="radio" name="supply" >Сетевые
+                    <button type="submit" href="#" class="filter__btn">ПОКАЗАТЬ</button>
+                  </div>
                 </form>
           </section>
           <section class="catalog-right">
-            <div class="catalog-right__head">
+            <div class="catalog__head">
                    <p class="heading__head">СОРТИРОВКА:</p>
                    <a href="#" class="catalog-right__menu">ПО ЦЕНЕ</a>
                    <a href="#" class="catalog-right__menu">ПО ТИПУ</a>
                    <a href="#" class="catalog-right__menu">ПО ФУНКЦИОНАЛУ</a>
-                   <div class="dir-up"></div>
-                   <div class="dir-down"></div>
+                   <a href="#" class="dir-up"></a>
+                   <a href="#" class="dir-down"></a>
             </div>
             <div class="catalog-cards">
               <div class="card">
@@ -210,21 +213,6 @@
         </section>
         
       </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <footer class="footer">
         <div class="footer__top">
           <div class="container">
@@ -278,6 +266,7 @@
             </div>
             </div>
       </footer>
+
 
 
 
