@@ -47,3 +47,20 @@
           popupMap.style.visibility="hidden";
          }
        } */
+
+       document.querySelectorAll ('tabs__triggers').forEach((item) =>
+       item.addEventListener('click', function(e) {
+         e.preventDefault();
+         const id = e.target.getAttribut('href').replace('#','');
+
+         document.querySelectorAll ('tabs__triggers').forEach(
+           (child) => child.classList.remove('tabs__triggers--active')
+         );
+         document.querySelectorAll ('tabs__block').forEach(
+          (child) => child.classList.remove('tabs__block--active')
+        );
+
+        this.e.classList.add('tabs__triggers--active');
+        document.getElementById(id).classList.add('tabs__block--active');
+       })
+       );
