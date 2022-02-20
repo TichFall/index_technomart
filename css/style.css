@@ -119,16 +119,16 @@ input::-webkit-input-placeholder {
   align-items: center;
 }
 .search__img {
-  background: url(./img/icon-search.png) no-repeat 5px 13px;
+  background: url(../img/icon-search.png) no-repeat 5px 13px;
 }
 .search__img:hover {
-  background: url(./img/ShapeWhite.png) no-repeat 5px 13px;
+  background: url(../img/ShapeWhite.png) no-repeat 5px 13px;
 }
 :focus::-webkit-input-placeholder {
   color: transparent;
 }
 .search__place:focus {
-  background: url(./img/ShapeRed.png) no-repeat 5px 13px;
+  background: url(../img/ShapeRed.png) no-repeat 5px 13px;
   padding-left: 30px;
   transition: 0.2s;
   opacity: 1;
@@ -153,16 +153,16 @@ input::-webkit-input-placeholder {
   opacity: 0.6;
 }
 ._img-bookmark {
-  background: url(./img/icon-bookmark.png) no-repeat 5px 13px;
+  background: url(../img/icon-bookmark.png) no-repeat 5px 13px;
 }
 ._img-bookmark:hover {
-  background: url(./img/bookmark_white.png) no-repeat 5px 13px;
+  background: url(../img/bookmark_white.png) no-repeat 5px 13px;
 }
 ._img-cart {
-  background: url(./img/icon-cart.png) no-repeat 5px 13px;
+  background: url(../img/icon-cart.png) no-repeat 5px 13px;
 }
 ._img-cart:hover {
-  background: url(./img/icon-cart_white.png) no-repeat 5px 13px;
+  background: url(../img/icon-cart_white.png) no-repeat 5px 13px;
 }
 ._red {
   background-color: rgba(238, 54, 67, 1);
@@ -223,7 +223,7 @@ input::-webkit-input-placeholder {
   width: 270px;
   height: 45px;
   color: rgba(238, 54, 67, 1);
-  background: url(./img/icon-phone.png) 25px 10px no-repeat;
+  background: url(../img/icon-phone.png) 25px 10px no-repeat;
 }
 .info__address {
   display: flex;
@@ -249,7 +249,7 @@ input::-webkit-input-placeholder {
   height: 45px;
   font-size: 21px;
   line-height: 21px;
-  background: white url(./img/icon-login.png) no-repeat 10px 12px;
+  background: white url(../img/icon-login.png) no-repeat 10px 12px;
   display: block;
   display: flex;
   justify-content: center;
@@ -288,8 +288,8 @@ input::-webkit-input-placeholder {
   color: #000;
   font-size: 21px;
   font-weight: 400;
-  background: url(./img/icon-login-2.png) no-repeat 93% 50%,
-    url(./img/icon-user.png) no-repeat 7% 47% #fff;
+  background: url(../img/icon-login-2.png) no-repeat 93% 50%,
+    url(../img/icon-user.png) no-repeat 7% 47% #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,7 +367,7 @@ input::-webkit-input-placeholder {
 }
 .catalog-menu {
   width: 463px;
-  background: url(img/icon-home.png) no-repeat 2px 2px;
+  background: url(../img/icon-home.png) no-repeat 2px 2px;
   font-size: 13px;
   line-height: 18px;
   color: #000;
@@ -377,7 +377,7 @@ input::-webkit-input-placeholder {
   position: relative;
   margin-left: 25px;
   padding-left: 20px;
-  background: url(img/icon-right-small.png) no-repeat left;
+  background: url(../img/icon-right-small.png) no-repeat left;
 }
 .heading__head {
   display: flex;
@@ -547,22 +547,22 @@ input::-webkit-input-placeholder {
   display: inline-block;
   width: 27px;
   height: 23px;
-  background: url(img/box-off.png) no-repeat;
+  background: url(../img/box-off.png) no-repeat;
   margin-right: 8px;
   position: relative;
   cursor: pointer;
 }
 
 .filter__checkbox-brand:hover + .fake {
-  background: url(img/box-off-hover.png) no-repeat;
+  background: url(../img/box-off-hover.png) no-repeat;
 }
 
 .filter__checkbox-brand:checked + .fake {
-  background: url(img/checkbox-on.png) no-repeat;
+  background: url(../img/checkbox-on.png) no-repeat;
 }
 
 .filter__checkbox-brand:checked:hover + .fake {
-  background: url(img/checkbox-on-hover.png) no-repeat;
+  background: url(../img/checkbox-on-hover.png) no-repeat;
 }
 .filter__title {
   font-weight: bold;
@@ -590,20 +590,20 @@ input::-webkit-input-placeholder {
   display: block;
   width: 25px;
   height: 25px;
-  background: url(img/radio.png) no-repeat;
+  background: url(../img/radio.png) no-repeat;
   margin-right: 10px;
 }
 
 .label-text:hover:before {
-  background: url(img/radio-hover.png) no-repeat;
+  background: url(../img/radio-hover.png) no-repeat;
 }
 
 .filter__radio:checked + .label-text::before {
-  background: url(img/radio-on.png) no-repeat;
+  background: url(../img/radio-on.png) no-repeat;
 }
 
 .filter__radio:checked + .label-text:hover:before {
-  background: url(img/radio-on-hover.png) no-repeat;
+  background: url(../img/radio-on-hover.png) no-repeat;
 }
 .owl-dots {
   width: 30px;
@@ -926,7 +926,7 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #63a63e url(img/icon-cart.png) no-repeat 25px 10px;
+  background: #63a63e url(../img/icon-cart.png) no-repeat 25px 10px;
   color: white;
   border-radius: 2px;
   box-shadow: inset 0px -3px 0px #367315;
@@ -935,10 +935,10 @@ input::-webkit-input-placeholder {
   text-transform: uppercase;
 }
 .card-menu__buy:hover {
-  background: #5fbb2d url(img/icon-cart.png) no-repeat 25px 10px;
+  background: #5fbb2d url(../img/icon-cart.png) no-repeat 25px 10px;
 }
 .card-menu__buy:active {
-  background: #518534 url(img/icon-cart.png) no-repeat 25px 10px;
+  background: #518534 url(../img/icon-cart.png) no-repeat 25px 10px;
 }
 .card-menu__bookmark:hover {
   border: 3px solid #32425c;
@@ -1169,7 +1169,7 @@ input::-webkit-input-placeholder {
 }
 .contacts__list-link {
   padding-left: 35px;
-  background: url(img/Layer\ 23\ copy\ 3.png) no-repeat 0px 10px;
+  background: url(../img/Layer\ 23\ copy\ 3.png) no-repeat 0px 10px;
 }
 .contacts__right {
   display: flex;
@@ -1422,4 +1422,3 @@ input::-webkit-input-placeholder {
   height: 449px;
   margin: 0 auto;
 }
-
