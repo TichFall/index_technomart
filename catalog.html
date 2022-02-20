@@ -60,9 +60,9 @@
       <main class="main">
         <div class="container">
               <div class="catalog-menu">
-                <a class="catalog__btn" href="#">КАТАЛОГ</a>
-                <a class="catalog__btn" href="#">ИНСТРУМЕНТ</a>
-                <a class="catalog__btn" href="#">ПЕРФОРАТОРЫ</a>
+                <a class="catalog__menu-btn" href="#">КАТАЛОГ</a>
+                <a class="catalog__menu-btn" href="#">ИНСТРУМЕНТ</a>
+                <a class="catalog__menu-btn" href="#">ПЕРФОРАТОРЫ</a>
               </div>
         <div class="catalog-heading">
                 <p>Перфораторы</p>
@@ -73,24 +73,56 @@
               <p class="heading__head">Фильтр:</p>
             </div>
                 <form class="filter" action="#" method="post" enctype="multipart/form-data">
-                  <div class="range">
                   <p class="filter__title">ЦЕНА:</p>
-                      0 - 30000
-                    </div>
+                        <div class="filter__price">
+                            <img src="img/Bitmap.png" alt="">
+                        </div>
+                        <div class="filter__price-bottom">
+                            <input type="text" class="filter__price-value" value="0" name="price-min">
+                            <label class="price-line">—</label>
+                            <input type="text" class="filter__price-value" value="30000" name="price-max">
+                        </div>
                   <div class="filter__products">               
                     <p class="filter__title">ПРОИЗВОДИТЕЛИ:</p>
-                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="bosh">BOSH</p>
-                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Интерскол">ИНТЕРСКОЛ</p>
-                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Makita">MAKIta</p>
-                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Dewalt">Dewalt</p>
-                    <p class="filter__items"><input class="filter__checkbox" type="checkbox" name="Hitachi">Hitachi</p>
+                        <div class="filter__brand">
+                          <p><label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-brand">
+                                    <span class="fake"></span>
+                                    <span>Bosch</span>
+                                </label></p>
+                            <p><label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-brand">
+                                    <span class="fake"></span>
+                                    <span>ИНТЕРСКОЛ</span></label></p>
+                                    <p><label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-brand">
+                                    <span class="fake"></span>
+                                    <span>MAKIta</span>
+                                </label></p>
+                            <p><label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-brand">
+                                    <span class="fake"></span>
+                                    <span>Dewalt</span>
+                                </label></p>
+                            <p><label class="filter__checkbox-label">
+                                    <input type="checkbox" class="filter__checkbox-brand">
+                                    <span class="fake"></span>
+                                    <span>Hitachi</span>
+                                </label></p>
                   </div>
+                </div>
                   <div class="filter__type">
                     <p class="filter__title">ПИТАНИЕ:</p>
-                    <input class="filter__items" value="accum" type="radio" name="supply">Аккумуляторные
-                    <input class="filter__items" value="network" type="radio" name="supply" >Сетевые
-                    <button type="submit" href="#" class="filter__btn">ПОКАЗАТЬ</button>
+                      <p><label class="filter__radio-label">
+                              <input type="radio" class="filter__radio" name="power_value" checked>
+                              <span class="label-text">АККУМУЛЯТОРНЫЕ</span>
+                          </label></p>
+                      <p><label class="filter__radio-label">
+                              <input type="radio" class="filter__radio" name="power_value">
+                              <span class="label-text" >СЕТЕВЫЕ</span>
+                            </label></p>
                   </div>
+                  <button class="filter__btn">ПОКАЗАТЬ</button>
                 </form>
           </section>
           <section class="catalog-right">
@@ -104,11 +136,53 @@
             </div>
             <div class="catalog-cards">
               <div class="card">
+                  <div class="card-menu">
+                    <a href="#" class="card-menu__buy">Купить</a>
+                    <a href="#" class="card-menu__bookmark">в закладки</a>
+                 </div>                             
+                 <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                  <p class="card__name">Перфоратор BOSCH <br> BFG 3000</p>
+                  <p class="card__discount">22500 Р.</p>
+                  <a class="card__button" href="#">15500 Р.</a>
+                </div>  
+              <div class="card">
                 <div class="card-menu">
                   <a href="#" class="card-menu__buy">Купить</a>
                   <a href="#" class="card-menu__bookmark">в закладки</a>
                </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
+                  <img class="card__img" src="img/snippet-945 copy 2.png" alt="">
+                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
+                  <p class="card__discount">30500 Р.</p>   
+                  <a class="card__button" href="#">25500 Р.</a>               
+              </div>
+              <div class="card">
+                <div class="card-menu">
+                  <a href="#" class="card-menu__buy">Купить</a>
+                  <a href="#" class="card-menu__bookmark">в закладки</a>
+               </div>               
+                <img class="card__new" src="img/Каталог new.png" alt="">                 
+               <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                <p class="card__name">Перфоратор BOSCH <br> BFG 3000</p>
+                <p class="card__discount">22500 Р.</p>
+                <a class="card__button" href="#">15500 Р.</a>
+              </div>  
+              <div class="card">
+                <div class="card-menu">
+                  <a href="#" class="card-menu__buy">Купить</a>
+                  <a href="#" class="card-menu__bookmark">в закладки</a>
+               </div>               
+                <img class="card__new" src="img/Каталог new.png" alt="">                 
+               <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+               <p class="card__discount">22500 Р.</p>
+                <p class="card__name">Перфоратор BOSCH <br> BFG 3000</p>
+                <a class="card__button" href="#">15500 Р.</a>
+              </div>  
+              <div class="card">
+                <div class="card-menu">
+                  <a href="#" class="card-menu__buy">Купить</a>
+                  <a href="#" class="card-menu__bookmark">в закладки</a>
+               </div>
+                  <img class="card__img" src="img/snippet-945 copy 2.png" alt="">
                   <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
                   <p class="card__discount">32500 Р.</p>   
                   <a class="card__button" href="#">25500 Р.</a>               
@@ -117,8 +191,29 @@
                 <div class="card-menu">
                   <a href="#" class="card-menu__buy">Купить</a>
                   <a href="#" class="card-menu__bookmark">в закладки</a>
+               </div>               
+                <img class="card__new" src="img/Каталог new.png" alt="">                 
+               <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                <p class="card__name">Перфоратор BOSCH <br> BFG 2000</p>
+                <a class="card__button" href="#">12500 Р.</a>
+              </div>  
+              <div class="card">
+                <div class="card-menu">
+                  <a href="#" class="card-menu__buy">Купить</a>
+                  <a href="#" class="card-menu__bookmark">в закладки</a>
+               </div>               
+                <img class="card__new" src="img/Каталог new.png" alt="">                 
+               <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                <p class="card__discount">22500 Р.</p>
+                <p class="card__name">Перфоратор BOSCH <br> BFG 3000</p>
+                <a class="card__button" href="#">15500 Р.</a>
+              </div>  
+              <div class="card">
+                <div class="card-menu">
+                  <a href="#" class="card-menu__buy">Купить</a>
+                  <a href="#" class="card-menu__bookmark">в закладки</a>
                </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
+                  <img class="card__img" src="img/snippet-945 copy 2.png" alt="">
                   <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
                   <p class="card__discount">32500 Р.</p>   
                   <a class="card__button" href="#">25500 Р.</a>               
@@ -127,78 +222,18 @@
                 <div class="card-menu">
                   <a href="#" class="card-menu__buy">Купить</a>
                   <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
-              <div class="card">
-                <div class="card-menu">
-                  <a href="#" class="card-menu__buy">Купить</a>
-                  <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
-              <div class="card">
-                <div class="card-menu">
-                  <a href="#" class="card-menu__buy">Купить</a>
-                  <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
-              <div class="card">
-                <div class="card-menu">
-                  <a href="#" class="card-menu__buy">Купить</a>
-                  <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
-              <div class="card">
-                <div class="card-menu">
-                  <a href="#" class="card-menu__buy">Купить</a>
-                  <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
-              <div class="card">
-                <div class="card-menu">
-                  <a href="#" class="card-menu__buy">Купить</a>
-                  <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
-              <div class="card">
-                <div class="card-menu">
-                  <a href="#" class="card-menu__buy">Купить</a>
-                  <a href="#" class="card-menu__bookmark">в закладки</a>
-               </div>
-                  <img class="card__img" src="img/snippet-32961 copy 3.png" alt="">
-                  <a href="#" class="card__name">Перфоратор BOSCH <br> BFG 9000</a>
-                  <p class="card__discount">32500 Р.</p>   
-                  <a class="card__button" href="#">25500 Р.</a>               
-              </div>
+               </div>               
+                <img class="card__new" src="img/Каталог new.png" alt="">                 
+               <img class="card__img" src="img/snippet-18927 copy 3.png" alt="">
+                <p class="card__name">Перфоратор BOSCH <br> BFG 2000</p>
+                <a class="card__button" href="#">12500 Р.</a>
+              </div>  
             </div>  
           <div class="catalog__footer">
             <a class="page-number" href="#">1</a>
             <a class="page-number" href="#">2</a>
             <a class="page-number" href="#">3</a>
-            <a href="" class="footer-btn">СЛЕДУЮЩАЯ</a>
+            <a href="#" class="footer-btn">СЛЕДУЮЩАЯ</a>
           </div> 
           </section>
         </div>
