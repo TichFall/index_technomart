@@ -10,7 +10,6 @@ $(document).ready(function () {
     navText: [nextIcon, prevtIcon],
   });
 });
-
 document.addEventListener("click", function (e) {
   let target = e.target;
 
@@ -24,9 +23,23 @@ document.addEventListener("click", function (e) {
     let element = document.getElementById(id);
     element.style.visibility = "hidden";
   }
+  window.addEventListener("click", function (e) {
+    if (e.target == popup__map) {
+      popup__map.style.visibility = "hidden";
+    }
+  });
+  window.addEventListener("click", function (e) {
+    if (e.target == popup__about) {
+      popup__about.style.visibility = "hidden";
+    }
+  });
 });
-
-/*  let popupMap = document.getElementById('popup__map'),
+$(document).ready(function () {
+  $(".burger-nav").click(function (event) {
+    $(".burger-nav, .nav-background").toggleClass("active");
+  });
+}),
+  /*  let popupMap = document.getElementById('popup__map'),
        popupClick = document.getElementById ('btnMap'),
        popupCloseMap = document.querySelector ('.close__map')
 
@@ -42,22 +55,22 @@ document.addEventListener("click", function (e) {
          }
        }  */
 
-document.querySelectorAll(".tabs-triggers__item").forEach((item) =>
-  item.addEventListener("click", function (e) {
-    e.preventDefault();
-    document
-      .querySelectorAll(".tabs-triggers__item")
-      .forEach((child) =>
-        child.classList.remove("tabs-triggers__item--active")
-      );
-    document
-      .querySelectorAll(".tabs__block")
-      .forEach((child) => child.classList.remove("tabs__block--active"));
-    item.classList.add("tabs-triggers__item--active");
-    const id = e.target.getAttribute("href").replace("#", "");
-    document.getElementById(id).classList.add("tabs__block--active");
-  })
-);
+  document.querySelectorAll(".tabs-triggers__item").forEach((item) =>
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      document
+        .querySelectorAll(".tabs-triggers__item")
+        .forEach((child) =>
+          child.classList.remove("tabs-triggers__item--active")
+        );
+      document
+        .querySelectorAll(".tabs__block")
+        .forEach((child) => child.classList.remove("tabs__block--active"));
+      item.classList.add("tabs-triggers__item--active");
+      const id = e.target.getAttribute("href").replace("#", "");
+      document.getElementById(id).classList.add("tabs__block--active");
+    })
+  );
 
 /* $(document).ready(function(){
         $('.tabs-triggers__item').click(function(e){
