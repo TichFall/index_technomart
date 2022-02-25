@@ -20,12 +20,17 @@
             <div class="header__logo">
               <p>ТЕХНОМАРТ</p>
             </div>
+            <div class="burger-nav" >
+              <span></span>
+            </div>
+            <div class="main-menu">
             <form class="search__form" method="post" enctype="multipart/form-data">
               <input class="search__place search__img" placeholder="Поиск:" type="search" />
             </form>
               <a class="header__items _img-bookmark" href="#">Закладки: 0</a>
               <a class="header__items _img-cart" href="#">Корзина: 0</a>
               <a class="checkout" href="#">Оформить заказ</a>
+            </div>
           </div>
           </div>
         </div>
@@ -45,15 +50,17 @@
                   <a class="authorization__reg" href="#">Регистрация</a>
               </div>
           </div>
-              <nav class="nav">
-                  <a class="nav__link" href="#">Главная</a>
-                  <a class="nav__link" href="#">Компания</a>
-                 <a class="nav__link" href="#">Каталог</a>
-                  <a class="nav__link" href="#">Новости</a>
-                  <a class="nav__link" href="#">Спецпредложения</a>
-                  <a class="nav__link" href="#">Доставка</a>
-                  <a class="nav__link" href="#">Контакты</a>
+          <div class="nav-background">  
+            <nav class="nav" id="menu__nav" >
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link" href="#">Компания</a>
+              <a class="nav__link" href="catalog.html">Каталог</a>
+                <a class="nav__link" href="#">Новости</a>
+                <a class="nav__link" href="#">Спецпредложения</a>
+                <a class="nav__link" href="#">Доставка</a>
+                <a class="nav__link" href="#">Контакты</a>
               </nav>
+          </div>
               </div>
           </div>
       </header>
@@ -244,7 +251,7 @@
                   <a href="#" class="contacts__list-link">ЖелДорЭкспедиция</a>
                 </div>    
                 
-                <button data-popupid="popup-about" class="btn _size popup__show">Подробнее о компании</button>  
+                <button data-popupid="popup__about" class="btn _size popup__show">Подробнее о компании</button>  
               </div>
               <div class="contacts__right">
                 <h2 class="heading">КОНТАКТЫ</h2>
@@ -305,7 +312,7 @@
                 </div>   
                 </div>
           </footer>
-           <div id="popup__map" class="popup">
+           <div id="popup__map" class="popup__map">
              
                <div class="popup__content-map">
                 <a href="#header"  class="close__map"><img data-popupid="popup__map" class="popup__close" src="img/icon-close.png" alt=""></a>
@@ -314,7 +321,7 @@
              
            </div>
 
-             <div id="popup-about" class="popup">
+             <div id="popup__about" class="popup">
                 <div class="popup__body">
                   <form class="popup__content">
                     <a href="#header" class="close"><img data-popupid="popup-about" class="popup__close" src="img/icon-close.png" alt=""></a>
