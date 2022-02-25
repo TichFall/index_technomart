@@ -1533,4 +1533,19 @@ input::-webkit-input-placeholder {
   .nav__link:active {
     max-width: 100%;
   }
+  .html {
+    height: 716px;
+  }
+  .main {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .popup {
+    display: none;
+  }
+  .popup__map {
+    display: none;
+  }
 }
