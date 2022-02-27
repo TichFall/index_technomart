@@ -250,7 +250,6 @@
                   <a href="#" class="contacts__list-link">Автотрейдинг</a>
                   <a href="#" class="contacts__list-link">ЖелДорЭкспедиция</a>
                 </div>    
-                
                 <button data-popupid="popup__about" class="btn _size popup__show">Подробнее о компании</button>  
               </div>
               <div class="contacts__right">
@@ -303,7 +302,7 @@
                 </div>
                 <div class="footer__info">
                   <div class="footer__answer">
-                  <p class="footer__txt">Обратная связь</p>
+                  <p class="footer__txt">Обратная связь —</p>
                   <a class="footer__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </div>    
                 <div class="footer__answer">
@@ -311,20 +310,22 @@
                   <a class="footer__link" href="htmlacademy.ru">htmlacademy.ru</a>
                 </div>   
                 </div>
+                </div>
+              </div>
+            </div>
           </footer>
-           <div id="popup__map" class="popup__map">
-             
+           <div id="popup__map" class="popup__map js-popup-close" data-popupid="popup__map">
                <div class="popup__content-map">
-                <a href="#header"  class="close__map"><img data-popupid="popup__map" class="popup__close" src="img/icon-close.png" alt=""></a>
+                <a href="#header"  class="close__map"><img data-popupid="popup__map" class="popup__close js-popup-close" src="img/icon-close.png" alt=""></a>
                  <img src="img/Слой 4.png" alt="">
                </div>
              
            </div>
 
-             <div id="popup__about" class="popup">
+             <div id="popup__about" class="popup js-popup-close" data-popupid="popup__about">
                 <div class="popup__body">
                   <form class="popup__content">
-                    <a href="#header" class="close"><img data-popupid="popup-about" class="popup__close" src="img/icon-close.png" alt=""></a>
+                    <a href="#header" class="close"><img data-popupid="popup__about" class="popup__close js-popup-close" src="img/icon-close.png" alt=""></a>
                     <div class="popup__top">
                       <div class="input">
                         Ваше имя:
@@ -350,9 +351,3 @@
             <script src="js/code.js"></script>
   </body>
   </html>
-  
-
-
-
-
-
