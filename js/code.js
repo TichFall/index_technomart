@@ -10,28 +10,18 @@ $(document).ready(function () {
     navText: [nextIcon, prevtIcon],
   });
 });
-document.addEventListener("click", function (e) {
-  let target = e.target;
-
-  if (target.classList.contains("popup__show")) {
-    let id = target.dataset.popupid;
+document.querySelectorAll(".popup__show").forEach((showButton) => {
+  showButton.addEventListener("click", function (e) {
+    let id = showButton.dataset.popupid;
     let element = document.getElementById(id);
     element.style.visibility = "visible";
-  }
-  if (target.classList.contains("popup__close")) {
-    let id = target.dataset.popupid;
+  });
+});
+document.querySelectorAll(".js-popup-close").forEach((closeButton) => {
+  closeButton.addEventListener("click", function (e) {
+    let id = closeButton.dataset.popupid;
     let element = document.getElementById(id);
     element.style.visibility = "hidden";
-  }
-  window.addEventListener("click", function (e) {
-    if (e.target == popup__map) {
-      popup__map.style.visibility = "hidden";
-    }
-  });
-  window.addEventListener("click", function (e) {
-    if (e.target == popup__about) {
-      popup__about.style.visibility = "hidden";
-    }
   });
 });
 $(document).ready(function () {
