@@ -1,4 +1,4 @@
-const nextIcon = '<img src="img/left-nav.png" alt:"right">';
+const nextIcon = '<img src="img/left-nav.png" alt:"left">';
 const prevtIcon = '<img src="img/right-nav.png" alt:"right">';
 
 $(document).ready(function () {
@@ -10,20 +10,20 @@ $(document).ready(function () {
     navText: [nextIcon, prevtIcon],
   });
 });
-document.querySelectorAll(".popup__show").forEach((showButton) => {
-  showButton.addEventListener("click", function (e) {
-    let id = showButton.dataset.popupid;
-    let element = document.getElementById(id);
-    element.style.visibility = "visible";
+
+function addToggle(selector, option) {
+  document.querySelectorAll(selector).forEach((closeButton) => {
+    closeButton.addEventListener("click", function (e) {
+      let id = closeButton.dataset.popupid;
+      let element = document.getElementById(id);
+      element.style.visibility = option;
+    });
   });
-});
-document.querySelectorAll(".js-popup-close").forEach((closeButton) => {
-  closeButton.addEventListener("click", function (e) {
-    let id = closeButton.dataset.popupid;
-    let element = document.getElementById(id);
-    element.style.visibility = "hidden";
-  });
-});
+}
+
+addToggle(".js-popup-close", "hidden");
+addToggle(".popup__show", "visible");
+
 $(document).ready(function () {
   $(".burger-nav").click(function (event) {
     $(".burger-nav, .nav-background").toggleClass("active");
