@@ -17,12 +17,12 @@ function addToggle(selector, option) {
         let id = closeButton.dataset.popupid;
         let element = document.getElementById(id);
         element.style.visibility = option;
+        addToggle(".js-popup-close", "hidden");
+        addToggle(".popup__show", "visible");
       }
     });
   });
 }
-addToggle(".js-popup-close", "hidden");
-addToggle(".popup__show", "visible");
 let burger = document.querySelector(".burger-nav");
 let navBg = document.querySelector(".nav-background");
 function toggle() {
