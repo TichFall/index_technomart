@@ -10,26 +10,35 @@ $(document).ready(function () {
     navText: [nextIcon, prevtIcon],
   });
 });
-
 function addToggle(selector, option) {
   document.querySelectorAll(selector).forEach((closeButton) => {
     closeButton.addEventListener("click", function (e) {
-      let id = closeButton.dataset.popupid;
-      let element = document.getElementById(id);
-      element.style.visibility = option;
+      if (e.target == closeButton) {
+        let id = closeButton.dataset.popupid;
+        let element = document.getElementById(id);
+        element.style.visibility = option;
+      }
     });
   });
 }
-
 addToggle(".js-popup-close", "hidden");
 addToggle(".popup__show", "visible");
-
-$(document).ready(function () {
-  $(".burger-nav").click(function (event) {
-    $(".burger-nav, .nav-background").toggleClass("active");
-  });
-}),
-  /*  let popupMap = document.getElementById('popup__map'),
+let burger = document.querySelector(".burger-nav");
+let navBg = document.querySelector(".nav-background");
+function toggle() {
+  burger.classList.toggle("active");
+  navBg.classList.toggle("active");
+}
+burger.addEventListener("click", toggle);
+navBg.addEventListener("click", toggle);
+/* closePopup(".nav-background"); */
+/* let popup = document.querySelectorAll(".popup");
+document.addEventListener("click", function (e) {
+  if (e.target == popup) {
+    popup.style.visibility = "hidden";
+  }
+}); */
+/*  let popupMap = document.getElementById('popup__map'),
        popupClick = document.getElementById ('btnMap'),
        popupCloseMap = document.querySelector ('.close__map')
 
@@ -38,29 +47,31 @@ $(document).ready(function () {
        };
        popupCloseMap.onclick = function(){
          popupMap.style.visibility="hidden";
-       }
-       window.onclick = function (e){
-         if (e.target == popupMap){
-          popupMap.style.visibility="hidden";
-         }
-       }  */
+       } */
 
-  document.querySelectorAll(".tabs-triggers__item").forEach((item) =>
-    item.addEventListener("click", function (e) {
-      e.preventDefault();
-      document
-        .querySelectorAll(".tabs-triggers__item")
-        .forEach((child) =>
-          child.classList.remove("tabs-triggers__item--active")
-        );
-      document
-        .querySelectorAll(".tabs__block")
-        .forEach((child) => child.classList.remove("tabs__block--active"));
-      item.classList.add("tabs-triggers__item--active");
-      const id = e.target.getAttribute("href").replace("#", "");
-      document.getElementById(id).classList.add("tabs__block--active");
-    })
-  );
+/* document.addEventListener("click", function (e) {
+    if (e.target == popupMap) {
+      let popupMap = document.getElementById("popup__map");
+      popupMap.style.visibility = "hidden";
+    }
+  }); */
+
+document.querySelectorAll(".tabs-triggers__item").forEach((item) =>
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    document
+      .querySelectorAll(".tabs-triggers__item")
+      .forEach((child) =>
+        child.classList.remove("tabs-triggers__item--active")
+      );
+    document
+      .querySelectorAll(".tabs__block")
+      .forEach((child) => child.classList.remove("tabs__block--active"));
+    item.classList.add("tabs-triggers__item--active");
+    const id = e.target.getAttribute("href").replace("#", "");
+    document.getElementById(id).classList.add("tabs__block--active");
+  })
+);
 
 /* $(document).ready(function(){
         $('.tabs-triggers__item').click(function(e){
