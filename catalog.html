@@ -10,56 +10,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header-menu">
-            <div class="header__logo">
-              <p>ТЕХНОМАРТ</p>
-            </div>
-            <form class="search__form" method="post" enctype="multipart/form-data">
-              <input class="search__place search__img" placeholder="Поиск:" type="search" />
-            </form>
-              <a class="header__items _img-bookmark" href="#">Закладки: 0</a>
-              <a class="header__items _img-cart _red" href="#">Корзина: 10</a>
-              <a class="checkout" href="#">Оформить заказ</a>
-          </div>
-          </div>
+<body><header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header-menu">
+        <div class="header__logo">
+          <p>ТЕХНОМАРТ</p>
         </div>
-        <div class="header__bottom">
-          <div class="container">
-            <div class="header__bottom-info">
-                <p class="header-text">
-                  Интернет-магазин строительных материалов и инструментов для
-                  ремонта
-                </p>
-                <div class="info">
-                <a class="info__number" href="tel:+78125550555">+7 (812) 555-05-55</a>
-                <p class="info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                </div>
-            <div class="user-menu">
-             <div class="profile">
-                <a href="">Равшан Джамшутович</a>
-              </div> 
-              <div class="input-user">
-                <a class="user-menu__btn _dot" href="#">Мои заказы</a>
-                <a class="user-menu__btn" href="#">Личный кабинет</a>
-              </div>
+        <div class="burger-nav">
+          <span ></span>
+        </div>
+        <div class="main-menu">
+        <form class="search__form" method="post" enctype="multipart/form-data">
+          <input class="search__place search__img" placeholder="Поиск:" type="search" />
+        </form>
+          <a class="header__items _img-bookmark" href="#">Закладки: 0</a>
+          <a class="header__items _img-cart" href="#">Корзина: 0</a>
+          <a class="checkout" href="#">Оформить заказ</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-info">
+            <p class="header-text">
+              Интернет-магазин строительных материалов и инструментов для
+              ремонта
+            </p>
+            <div class="info">
+            <a class="info__number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
+            <div class="user-menu">
+              <div class="profile">
+                 <a href="">Равшан Джамшутович</a>
+               </div> 
+               <div class="input-user">
+                 <a class="user-menu__btn _dot" href="#">Мои заказы</a>
+                 <a class="user-menu__btn" href="#">Личный кабинет</a>
+               </div>
+             </div>
+      </div>
+      <div id="nav-background" class="nav-background popup__show" >  
+        <nav class="nav" id="menu__nav" >
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="#">Компания</a>
+          <a class="nav__link" href="catalog.html">Каталог</a>
+            <a class="nav__link" href="#">Новости</a>
+            <a class="nav__link" href="#">Спецпредложения</a>
+            <a class="nav__link" href="#">Доставка</a>
+            <a class="nav__link" href="#">Контакты</a>
+          </nav>
+      </div>
           </div>
-              <ul class="nav">
-                  <li><a class="nav__link" href="#">Главная</a></li>
-                  <li><a class="nav__link" href="#">Компания</a></li>
-                  <li><a class="nav__link" href="#">Каталог</a></li>
-                  <li><a class="nav__link" href="#">Новости</a></li>
-                  <li><a class="nav__link" href="#">Спецпредложения</a></li>
-                  <li><a class="nav__link" href="#">Доставка</a></li>
-                  <li><a class="nav__link" href="#">Контакты</a></li>
-              </ul>
-              </div>
-          </div>
-      </header>
+      </div>
+  </header>
+    
       <main class="main">
         <div class="container">
               <div class="catalog-menu">
@@ -70,11 +77,21 @@
         <div class="catalog-heading">
                 <p>Перфораторы</p>
         </div>
+        <div class="catalog__head">
+          <div class="filter__heading popup__show" data-popupid="popup__filter">Фильтр:</div>
+          <div class="sorting">
+            <button class="sorting__heading" >СОРТИРОВКА:</button>
+            <div id="catalog-sorting" class="catalog-sorting">
+              <a href="#" class="catalog-sorting__menu">ПО ЦЕНЕ</a>
+              <a href="#" class="catalog-sorting__menu">ПО ТИПУ</a>
+              <a href="#" class="catalog-sorting__menu">ПО ФУНКЦИОНАЛУ</a>
+          </div>
+        </div>
+        <a href="#" class="dir-up"></a>
+        <a href="#" class="dir-down"></a>
+   </div>
         <div class="catalog">
           <section class="catalog-left">
-            <div class="catalog__head">
-              <p class="heading__head">Фильтр:</p>
-            </div>
                 <form class="filter" action="#" method="post" enctype="multipart/form-data">
                   <p class="filter__title">ЦЕНА:</p>
                         <div class="filter__price">
@@ -129,14 +146,7 @@
                 </form>
           </section>
           <section class="catalog-right">
-            <div class="catalog__head">
-                   <p class="heading__head">СОРТИРОВКА:</p>
-                   <a href="#" class="catalog-right__menu">ПО ЦЕНЕ</a>
-                   <a href="#" class="catalog-right__menu">ПО ТИПУ</a>
-                   <a href="#" class="catalog-right__menu">ПО ФУНКЦИОНАЛУ</a>
-                   <a href="#" class="dir-up"></a>
-                   <a href="#" class="dir-down"></a>
-            </div>
+            
             <div class="catalog-cards">
               <div class="card">
                   <div class="card-menu">
@@ -304,5 +314,63 @@
             </div>
             </div>
       </footer>
+      <section id="popup__filter" class="popup__filter" data-popupid="popup__filter">
+        <a href="#header"  class="close__filter"><img data-popupid="popup__filter" class="popup__close js-popup-close" src="img/icon-close.png" alt=""></a>
+        <form class="popup-filter" action="#" method="post" enctype="multipart/form-data">
+          <p class="filter__title">ЦЕНА:</p>
+                <div class="filter__price">
+                    <img src="img/Bitmap.png" alt="">
+                </div>
+                <div class="filter__price-bottom">
+                    <input type="text" class="filter__price-value" value="0" name="price-min">
+                    <label class="price-line">—</label>
+                    <input type="text" class="filter__price-value" value="30000" name="price-max">
+                </div>
+          <div class="filter__products">               
+            <p class="filter__title">ПРОИЗВОДИТЕЛИ:</p>
+                <div class="filter__brand">
+                  <p><label class="filter__checkbox-label">
+                            <input type="checkbox" class="filter__checkbox-brand">
+                            <span class="fake"></span>
+                            <span>Bosch</span>
+                        </label></p>
+                    <p><label class="filter__checkbox-label">
+                            <input type="checkbox" class="filter__checkbox-brand">
+                            <span class="fake"></span>
+                            <span>ИНТЕРСКОЛ</span></label></p>
+                            <p><label class="filter__checkbox-label">
+                            <input type="checkbox" class="filter__checkbox-brand">
+                            <span class="fake"></span>
+                            <span>MAKIta</span>
+                        </label></p>
+                    <p><label class="filter__checkbox-label">
+                            <input type="checkbox" class="filter__checkbox-brand">
+                            <span class="fake"></span>
+                            <span>Dewalt</span>
+                        </label></p>
+                    <p><label class="filter__checkbox-label">
+                            <input type="checkbox" class="filter__checkbox-brand">
+                            <span class="fake"></span>
+                            <span>Hitachi</span>
+                        </label></p>
+          </div>
+        </div>
+          <div class="filter__type">
+            <p class="filter__title">ПИТАНИЕ:</p>
+              <p><label class="filter__radio-label">
+                      <input type="radio" class="filter__radio" name="power_value" checked>
+                      <span class="label-text">АККУМУЛЯТОРНЫЕ</span>
+                  </label></p>
+              <p><label class="filter__radio-label">
+                      <input type="radio" class="filter__radio" name="power_value">
+                      <span class="label-text" >СЕТЕВЫЕ</span>
+                    </label></p>
+          </div>
+          <button class="filter__btn">ПОКАЗАТЬ</button>
+        </form>
+  </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/code.js"></script>
 </body>
 </html>
