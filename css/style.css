@@ -1460,6 +1460,7 @@ input::-webkit-input-placeholder {
   width: 943px;
   height: 449px;
   margin: 0 auto;
+  width: 100%;
 }
 .burger-nav {
   display: none;
