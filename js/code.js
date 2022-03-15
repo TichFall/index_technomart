@@ -10,6 +10,8 @@ $(document).ready(function () {
     navText: [nextIcon, prevtIcon],
   });
 });
+addToggle(".js-popup-close", "hidden");
+addToggle(".popup__show", "visible");
 function addToggle(selector, option) {
   document.querySelectorAll(selector).forEach((closeButton) => {
     closeButton.addEventListener("click", function (e) {
@@ -17,8 +19,6 @@ function addToggle(selector, option) {
         let id = closeButton.dataset.popupid;
         let element = document.getElementById(id);
         element.style.visibility = option;
-        addToggle(".js-popup-close", "hidden");
-        addToggle(".popup__show", "visible");
       }
     });
   });
@@ -31,6 +31,15 @@ function toggle() {
 }
 burger.addEventListener("click", toggle);
 navBg.addEventListener("click", toggle);
+
+let sorting = document.querySelector(".sorting__heading");
+let sorting_menu = document.querySelector(".catalog-sorting");
+function toggleSorting() {
+  sorting.classList.toggle("active");
+  sorting_menu.classList.toggle("active");
+}
+sorting.addEventListener("click", toggleSorting);
+sorting_menu.addEventListener("click", toggleSorting);
 /* closePopup(".nav-background"); */
 /* let popup = document.querySelectorAll(".popup");
 document.addEventListener("click", function (e) {
