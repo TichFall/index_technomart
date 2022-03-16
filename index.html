@@ -318,22 +318,27 @@
            <div id="popup__map" class="popup__map js-popup-close" data-popupid="popup__map">
                <div class="popup__content-map">
                 <a href="#header"  class="close__map"><img data-popupid="popup__map" class="popup__close js-popup-close" src="img/icon-close.png" alt=""></a>
-                 <img src="img/Слой 4.png" alt="">
+                 <img class="popup__map-img" src="img/Слой 4.png" alt="">
                </div>
            </div>
+
+
+
              <div id="popup__about" class="popup js-popup-close" data-popupid="popup__about">
-                <div class="popup__body">
+             
                   <form class="popup__content">
                     <a href="#header" class="close"><img data-popupid="popup__about" class="popup__close js-popup-close" src="img/icon-close.png" alt=""></a>
                     <div class="popup__top">
                       <div class="input">
-                        Ваше имя:
-                        <input type="text" placeholder="Имя Фамилия" class="popup__input">
-                      </div>
-                      <div class="input">
-                        Ваш e-mail:
-                        <input type="mail" placeholder="email@example.com" class="popup__input">
-                      </div>
+                        <div class="input__feedback">
+                          Ваше имя:
+                          <input type="text" placeholder="Имя Фамилия" class="popup__input">                
+                        </div>
+                        <div class="input__feedback">
+                          Ваш e-mail:
+                          <input type="mail" placeholder="email@example.com" class="popup__input">              
+                        </div>
+                      </div>        
                       <div class="input-message">
                         Текст письма:
                         <textarea name="text" class="popup__textarea" placeholder="В свободной форме"></textarea>
@@ -341,9 +346,9 @@
                     </div>
                   <div class="popup__footer">
                     <button class="popup__btn" type="submit">Отправить</button>
-                        </div>
+                  </div>
                   </form>
-                </div>
+               
               </div> 
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <script src="js/owl.carousel.min.js"></script>
