@@ -1364,17 +1364,13 @@ input::-webkit-input-placeholder {
   top: 0;
   z-index: 200;
 }
-.popup__body {
-  margin: 0 auto;
-  width: 620px;
-  height: 430px;
-}
 .popup__content {
   width: 620px;
   height: 430px;
   position: relative;
-  margin-top: 100px;
+  margin: 100px auto;
   border-top: 5px solid red;
+  background-color: white;
 }
 .popup__close {
   position: absolute;
@@ -1382,35 +1378,17 @@ input::-webkit-input-placeholder {
   right: 10px;
 }
 .popup__top {
-  margin: 0 auto;
-  width: 620px;
-  height: 316px;
-  background-color: white;
+  height: 311px;
+  padding: 39px 80px 37px 80px;
+}
+.input__feedback {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0px 80px;
+  flex-direction: column;
 }
 .input {
-  margin-top: 50px;
-  width: 220px;
-  height: 70px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 1);
-  font-size: 18px;
-  line-height: 24px;
-}
-.input-message {
-  color: rgba(0, 0, 0, 1);
-  font-size: 18px;
-  line-height: 24px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
+  margin-bottom: 13px;
 }
 .popup__input {
   width: 220px;
@@ -1421,13 +1399,11 @@ input::-webkit-input-placeholder {
 .popup__textarea {
   width: 460px;
   height: 114px;
+  resize: none;
   border: 2px solid #c5c5c5;
-  border-radius: 2px;
 }
 .popup__footer {
-  margin: 0 auto;
-  width: 620px;
-  height: 120px;
+  height: 112px;
   background: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -2203,7 +2179,50 @@ input::-webkit-input-placeholder {
   .filter {
     margin: 100px auto;
   }
-  .catalog__footer {
+  .popup__content {
+    max-width: 620px;
+    width: 100%;
+    height: auto;
+  }
+  .popup__top {
+    padding: 0 10px;
+  }
+  .input__feedback {
+    margin-top: 20px;
+    align-items: center;
+  }
+  .input {
+    display: block;
+    max-width: 620px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .input-message {
+    margin-top: 10px;
+    height: auto;
+  }
+  .popup__textarea {
+    width: 100%;
+    min-width: 220px;
+  }
+  .popup__footer {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .popup__btn {
     margin: 0 auto;
+  }
+  .cards {
+    justify-content: space-around;
+  }
+  .btn._size {
+    margin: auto;
+  }
+  .popup__content-map {
+    width: 100%;
+  }
+  .popup__map-img {
+    width: 100%;
+    height: auto;
   }
 }
