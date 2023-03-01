@@ -22,6 +22,7 @@ ul {
 }
 
 body {
+  
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
@@ -1418,25 +1419,9 @@ input::-webkit-input-placeholder {
   text-transform: uppercase;
   color: white;
 }
-.popup__map {
-  visibility: hidden;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.295);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 200;
-}
-.popup__content-map {
-  position: relative;
-  top: 15%;
-  margin-top: 100px;
-  border-top: 5px solid red;
-  width: 943px;
-  height: 449px;
-  margin: 0 auto;
-  width: 100%;
+
+.hidden {
+  display: none;
 }
 .burger-nav {
   display: none;
@@ -2218,11 +2203,6 @@ input::-webkit-input-placeholder {
   .btn._size {
     margin: auto;
   }
-  .popup__content-map {
-    width: 100%;
-  }
-  .popup__map-img {
-    width: 100%;
-    height: auto;
-  }
+  
+  
 }
