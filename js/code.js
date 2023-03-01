@@ -10,8 +10,14 @@ $(document).ready(function () {
     navText: [nextIcon, prevtIcon],
   });
 });
-addToggle(".js-popup-close", "hidden");
-addToggle(".popup__show", "visible");
+
+let popupMapOpen = document.querySelector("#popup__map");
+let popupMapBtn = document.getElementById("myBtn");
+
+popupMapBtn.addEventListener("click", function () {
+  popupMapOpen.classList.remove("hidden");
+});
+
 function addToggle(selector, option) {
   document.querySelectorAll(selector).forEach((closeButton) => {
     closeButton.addEventListener("click", function (e) {
@@ -23,6 +29,8 @@ function addToggle(selector, option) {
     });
   });
 }
+addToggle(".js-popup-close", "hidden");
+addToggle(".popup__show", "visible");
 document.querySelectorAll(".tabs-triggers__item").forEach((item) =>
   item.addEventListener("click", function (e) {
     e.preventDefault();
@@ -56,6 +64,7 @@ function toggleSorting() {
 }
 sorting.addEventListener("click", toggleSorting);
 sorting_menu.addEventListener("click", toggleSorting);
+
 /* closePopup(".nav-background"); */
 /* let popup = document.querySelectorAll(".popup");
 document.addEventListener("click", function (e) {
